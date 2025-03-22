@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Pages/HomePage.tsx"],"sourcesContent":["'use client';\nimport React from 'react';\n// import { MyForm } from '../Form/Form';\nimport { Container } from '@mui/material';\n// import { Aside } from '../Aside/Aside';\n\nexport const HomePage = () => {\n  return (\n    <Container>\n      {/* <Aside />\n      <div>\n        <MyForm />\n        </div> */}\n    </Container>\n  );\n};\n"],"names":[],"mappings":";;;;AAEA,yCAAyC;AACzC;AAHA;;;AAMO,MAAM,WAAW;IACtB,qBACE,8OAAC,mMAAA,CAAA,YAAS;;;;;AAOd"}},
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

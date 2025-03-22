@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Aside/Styled.jsx"],"sourcesContent":["'use client';\nimport { InputLabel, styled, TextField } from '@mui/material';\n\nexport const StyledAside = styled('aside')(() => ({\n    position: 'fixed',\n    top: '0',\n    left: '0',\n    height: '100%',\n    width: '40%',\n    display: 'flex',\n    flexDirection: 'column',\n    justifyContent: 'space-between',\n    gap: '4px',\n    padding: '16px',\n    backgroundColor: '#F3DCCB',\n}));\n"],"names":[],"mappings":";;;AACA;AADA;;AAGO,MAAM,cAAc,CAAA,GAAA,6MAAA,CAAA,SAAM,AAAD,EAAE,SAAS,IAAM,CAAC;QAC9C,UAAU;QACV,KAAK;QACL,MAAM;QACN,QAAQ;QACR,OAAO;QACP,SAAS;QACT,eAAe;QACf,gBAAgB;QAChB,KAAK;QACL,SAAS;QACT,iBAAiB;IACrB,CAAC"}},
+    {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Aside/Aside.tsx"],"sourcesContent":["'use client';\nimport React from 'react';\nimport { StyledAside } from './Styled';\n\nexport const Aside = () => {\n  return (\n    <StyledAside>\n      <h1>availible 24/7</h1>\n    </StyledAside>\n  );\n};\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIO,MAAM,QAAQ;IACnB,qBACE,6LAAC,wIAAA,CAAA,cAAW;kBACV,cAAA,6LAAC;sBAAG;;;;;;;;;;;AAGV;KANa"}},
+    {"offset": {"line": 64, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 70, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Pages/HomePage.tsx"],"sourcesContent":["'use client';\nimport React from 'react';\n// import { MyForm } from '../Form/Form';\n// import { Container } from '@mui/material';\nimport { Aside } from '../Aside/Aside';\n\nexport const HomePage = () => {\n  return (\n    <>\n      <Aside />\n      <div>{/* <MyForm /> */}</div>\n    </>\n  );\n};\n"],"names":[],"mappings":";;;;AAEA,yCAAyC;AACzC,6CAA6C;AAC7C;AAJA;;;AAMO,MAAM,WAAW;IACtB,qBACE;;0BACE,6LAAC,uIAAA,CAAA,QAAK;;;;;0BACN,6LAAC;;;;;;;AAGP;KAPa"}},
+    {"offset": {"line": 102, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

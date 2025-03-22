@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Aside/Styled.tsx"],"sourcesContent":["'use client';\nimport { styled } from '@mui/material';\n\nexport const StyledAside = styled('aside')(() => ({\n  position: 'fixed',\n  top: '0',\n  left: '0',\n  height: '100%',\n  width: '40%',\n  display: 'flex',\n  flexDirection: 'column',\n  justifyContent: 'space-between',\n  gap: '4px',\n  padding: '16px',\n  //   backgroundColor: theme.palette.primary.main,\n}));\n"],"names":[],"mappings":";;;AACA;AADA;;AAGO,MAAM,cAAc,CAAA,GAAA,0MAAA,CAAA,SAAM,AAAD,EAAE,SAAS,IAAM,CAAC;QAChD,UAAU;QACV,KAAK;QACL,MAAM;QACN,QAAQ;QACR,OAAO;QACP,SAAS;QACT,eAAe;QACf,gBAAgB;QAChB,KAAK;QACL,SAAS;IAEX,CAAC"}},
+    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Aside/Aside.tsx"],"sourcesContent":["'use client';\nimport React from 'react';\nimport { StyledAside } from './Styled';\n\nexport const Aside = () => {\n  return (\n    <StyledAside>\n      <h1>availible 24/7</h1>\n    </StyledAside>\n  );\n};\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIO,MAAM,QAAQ;IACnB,qBACE,8OAAC,qIAAA,CAAA,cAAW;kBACV,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGV"}},
+    {"offset": {"line": 62, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 68, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Pages/HomePage.tsx"],"sourcesContent":["'use client';\nimport React from 'react';\n// import { MyForm } from '../Form/Form';\n// import { Container } from '@mui/material';\nimport { Aside } from '../Aside/Aside';\n\nexport const HomePage = () => {\n  return (\n    <>\n      <Aside />\n      <div>{/* <MyForm /> */}</div>\n    </>\n  );\n};\n"],"names":[],"mappings":";;;;AAEA,yCAAyC;AACzC,6CAA6C;AAC7C;AAJA;;;AAMO,MAAM,WAAW;IACtB,qBACE;;0BACE,8OAAC,oIAAA,CAAA,QAAK;;;;;0BACN,8OAAC;;;;;;;AAGP"}},
+    {"offset": {"line": 94, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

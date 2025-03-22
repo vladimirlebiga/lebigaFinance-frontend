@@ -1,0 +1,16 @@
+'use client';
+import { styled } from '@mui/material';
+
+export const StyledAside = styled('div')(() => ({
+  position: 'fixed',
+  top: '0',
+  left: '0',
+  height: '100%',
+  width: '40%',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  gap: '4px',
+  padding: '16px',
+  //   backgroundColor: theme.palette.primary.main,
+}));
