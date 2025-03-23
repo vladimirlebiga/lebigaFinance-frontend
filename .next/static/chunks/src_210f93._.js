@@ -678,7 +678,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-client] (ecmascript) <locals> <export default as styled>");
 'use client';
 ;
-const StyledAside = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(()=>({
+const StyledAside = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])('div')(({ theme })=>({
         position: 'fixed',
         top: '0',
         left: '0',
@@ -688,7 +688,8 @@ const StyledAside = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
         flexDirection: 'column',
         justifyContent: 'space-between',
         gap: '4px',
-        padding: '16px'
+        padding: '16px',
+        backgroundColor: theme.palette.primary.main
     }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);

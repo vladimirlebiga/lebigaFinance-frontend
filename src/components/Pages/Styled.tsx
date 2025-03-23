@@ -1,5 +1,5 @@
 'use client';
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 export const StyledWrapper = styled('div')(({ theme }) => ({
   position: 'fixed',

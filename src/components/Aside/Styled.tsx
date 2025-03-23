@@ -1,7 +1,7 @@
 'use client';
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
-export const StyledAside = styled('div')(() => ({
+export const StyledAside = styled('div')(({ theme }) => ({
   position: 'fixed',
   top: '0',
   left: '0',
@@ -12,5 +12,5 @@ export const StyledAside = styled('div')(() => ({
   justifyContent: 'space-between',
   gap: '4px',
   padding: '16px',
-  //   backgroundColor: theme.palette.primary.main,
+  backgroundColor: theme.palette.primary.main,
 }));

@@ -1,9 +1,10 @@
+'use client';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#F3DCCB',
+      main: '#FEDCC7',
     },
     secondary: {
       main: '#FFFFFF',
@@ -14,8 +15,6 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: '"Poppins", sans-serif',
-    // This sets the base font size for MUI's typography scaling.
-    // 16 => 1rem = 16px
     fontSize: 16,
     fontWeightRegular: 400,
     fontWeightBold: 700,
@@ -24,7 +23,7 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         contained: {
-          backgroundColor: '#F3DCCB',
+          backgroundColor: '#FEDCC7', //#F3DCCB
           borderColor: '#000',
           color: '#fff',
           fontSize: '16px',

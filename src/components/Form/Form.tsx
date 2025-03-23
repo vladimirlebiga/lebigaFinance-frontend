@@ -6,7 +6,7 @@ import { schemaContact } from './Schema';
 import { Box } from '@mui/material';
 import { PhoneInputComponent } from '../Input/PhoneInput';
 import CheckboxInput from '../Checkbox/Checkbox';
-import { TextareaComponent } from '../Textarea/Textarea';
+// import { TextareaComponent } from '../Textarea/Textarea';
 import { ButtonComponent } from '../Button/Button';
 import { InputComponent } from '../Input/Input';
 
@@ -75,9 +75,9 @@ export function MyForm() {
             <CheckboxInput id="other" />
           </Box>
 
-          <Box>
+          {/* <Box>
             <TextareaComponent id="description" />
-          </Box>
+          </Box> */}
           <div>
             <ButtonComponent id="send" />
           </div>
