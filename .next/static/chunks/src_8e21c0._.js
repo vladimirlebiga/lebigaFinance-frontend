@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_210f93._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_8e21c0._.js", {
 
 "[project]/src/components/Form/Schema.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -23,118 +23,6 @@ const schemaContact = __TURBOPACK__imported__module__$5b$project$5d2f$node_modul
     legalContract: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__.boolean(),
     other: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$yup$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__.boolean()
 });
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/src/components/Input/PhoneInput.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
-{
-// 'use client';
-// import React from 'react';
-// import { Controller, useFormContext } from 'react-hook-form';
-// import { MuiTelInput } from 'mui-tel-input';
-// export const PhoneInputComponent = () => {
-//   const { control } = useFormContext();
-//   return (
-//     <Controller
-//       name="phone"
-//       control={control}
-//       rules={{ required: 'Phone number is required' }}
-//       render={({ field, fieldState: { error } }) => (
-//         <div>
-//           <label htmlFor="phone">Phone</label>
-//           <MuiTelInput {...field} defaultCountry="NL" />
-//           {error && <p style={{ color: 'red' }}>{error.message}</p>}
-//         </div>
-//       )}
-//     />
-//   );
-// };
-__turbopack_esm__({
-    "PhoneInputComponent": (()=>PhoneInputComponent)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$mui$2d$tel$2d$input$2f$dist$2f$mui$2d$tel$2d$input$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/mui-tel-input/dist/mui-tel-input.es.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_refresh__.signature();
-'use client';
-;
-;
-;
-const PhoneInputComponent = ()=>{
-    _s();
-    // 1. Ensure hooks are always called in the same order
-    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const reactId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"])();
-    const { control } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"])();
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "PhoneInputComponent.useEffect": ()=>{
-            setMounted(true);
-        }
-    }["PhoneInputComponent.useEffect"], []);
-    // 2. Defer rendering until after the component has mounted
-    if (!mounted) return null;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Controller"], {
-        name: "phone",
-        control: control,
-        rules: {
-            required: 'Phone number is required'
-        },
-        render: ({ field, fieldState: { error } })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        htmlFor: `phone-${reactId}`,
-                        children: "Phone"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Input/PhoneInput.tsx",
-                        lineNumber: 51,
-                        columnNumber: 11
-                    }, void 0),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$mui$2d$tel$2d$input$2f$dist$2f$mui$2d$tel$2d$input$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MuiTelInput"], {
-                        ...field,
-                        defaultCountry: "NL",
-                        id: `phone-${reactId}`
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Input/PhoneInput.tsx",
-                        lineNumber: 52,
-                        columnNumber: 11
-                    }, void 0),
-                    error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        style: {
-                            color: 'red'
-                        },
-                        children: error.message
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Input/PhoneInput.tsx",
-                        lineNumber: 53,
-                        columnNumber: 21
-                    }, void 0)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/Input/PhoneInput.tsx",
-                lineNumber: 49,
-                columnNumber: 9
-            }, void 0)
-    }, void 0, false, {
-        fileName: "[project]/src/components/Input/PhoneInput.tsx",
-        lineNumber: 44,
-        columnNumber: 5
-    }, this);
-};
-_s(PhoneInputComponent, "XvR6FufKsbHYGsEx0k8YJX5Ssjs=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"]
-    ];
-});
-_c = PhoneInputComponent;
-var _c;
-__turbopack_refresh__.register(_c, "PhoneInputComponent");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -336,146 +224,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/components/Textarea/Textarea.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
-{
-// 'use client';
-// import React, { useId } from 'react';
-// import TextField from '@mui/material/TextField';
-// import { Controller, useFormContext } from 'react-hook-form';
-// interface InputConfig {
-//   name: string;
-//   label: string;
-//   placeholder: string;
-// }
-// const config: Record<string, InputConfig> = {
-//   description: {
-//     name: 'description',
-//     label: 'Description',
-//     placeholder: 'Enter your description',
-//   },
-// };
-// interface InputProps {
-//   id: string;
-// }
-// export const TextareaComponent = ({ id }: InputProps) => {
-//   // Generate a stable ID
-//   const reactId = useId();
-//   const { name, label, placeholder } = config[id];
-//   const { control } = useFormContext();
-//   return (
-//     <Controller
-//       name={name}
-//       control={control}
-//       render={({ field, fieldState: { error } }) => (
-//         <div>
-//           <label htmlFor={`${name}-${reactId}`}>{label}</label>
-//           <TextField
-//             multiline
-//             rows={4}
-//             {...field}
-//             id={`${name}-${reactId}`}
-//             variant="outlined"
-//             error={!!error}
-//             helperText={error ? error.message : ''}
-//             placeholder={placeholder}
-//             fullWidth
-//           />
-//         </div>
-//       )}
-//     />
-//   );
-// };
-__turbopack_esm__({
-    "TextareaComponent": (()=>TextareaComponent)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/TextField/TextField.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_refresh__.signature();
-'use client';
-;
-;
-;
-const config = {
-    description: {
-        name: 'description',
-        label: 'Description',
-        placeholder: 'Enter your description'
-    }
-};
-const TextareaComponent = ({ id })=>{
-    _s();
-    // 1. Call hooks unconditionally at top
-    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const reactId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"])();
-    const { name, label, placeholder } = config[id];
-    const { control } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"])();
-    // 2. Then do side effects
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "TextareaComponent.useEffect": ()=>{
-            setMounted(true);
-        }
-    }["TextareaComponent.useEffect"], []);
-    // 3. Conditionally return null or the UI
-    if (!mounted) return null;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Controller"], {
-        name: name,
-        control: control,
-        render: ({ field, fieldState: { error } })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        htmlFor: `${name}-${reactId}`,
-                        children: label
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Textarea/Textarea.tsx",
-                        lineNumber: 98,
-                        columnNumber: 11
-                    }, void 0),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        multiline: true,
-                        rows: 4,
-                        ...field,
-                        id: `${name}-${reactId}`,
-                        variant: "outlined",
-                        error: !!error,
-                        helperText: error ? error.message : '',
-                        placeholder: placeholder,
-                        fullWidth: true
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Textarea/Textarea.tsx",
-                        lineNumber: 99,
-                        columnNumber: 11
-                    }, void 0)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/Textarea/Textarea.tsx",
-                lineNumber: 97,
-                columnNumber: 9
-            }, void 0)
-    }, void 0, false, {
-        fileName: "[project]/src/components/Textarea/Textarea.tsx",
-        lineNumber: 93,
-        columnNumber: 5
-    }, this);
-};
-_s(TextareaComponent, "XvR6FufKsbHYGsEx0k8YJX5Ssjs=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"]
-    ];
-});
-_c = TextareaComponent;
-var _c;
-__turbopack_refresh__.register(_c, "TextareaComponent");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
 "[project]/src/components/Button/Button.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -524,161 +272,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/components/Input/Input.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
-{
-// 'use client';
-// import { TextField } from '@mui/material';
-// import React from 'react';
-// import { Controller, useFormContext } from 'react-hook-form';
-// interface InputConfig {
-//   name: string;
-//   label: string;
-//   type: string;
-//   placeholder: string;
-// }
-// const config: Record<string, InputConfig> = {
-//   name: {
-//     name: 'name',
-//     label: 'Name',
-//     type: 'text',
-//     placeholder: 'Enter your name',
-//   },
-//   email: {
-//     name: 'email',
-//     label: 'Email',
-//     type: 'email',
-//     placeholder: 'Enter your email',
-//   },
-// };
-// interface InputProps {
-//   id: string;
-// }
-// export const InputComponent = ({ id }: InputProps) => {
-//   const { name, label, type, placeholder } = config[id];
-//   const { control } = useFormContext();
-//   console.log(name);
-//   return (
-//     <Controller
-//       name={name}
-//       control={control}
-//       render={({ field, fieldState: { error } }) => (
-//         <div>
-//           <label htmlFor={name}>{label}</label>
-//           <TextField
-//             {...field}
-//             id={name}
-//             variant="outlined"
-//             type={type}
-//             error={!!error}
-//             helperText={error ? error.message : ''}
-//             placeholder={placeholder}
-//             fullWidth
-//           />
-//         </div>
-//       )}
-//     />
-//   );
-// };
-__turbopack_esm__({
-    "InputComponent": (()=>InputComponent)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/TextField/TextField.js [app-client] (ecmascript) <export default as TextField>");
-;
-var _s = __turbopack_refresh__.signature();
-'use client';
-;
-;
-;
-const config = {
-    name: {
-        name: 'name',
-        label: 'Name',
-        type: 'text',
-        placeholder: 'Enter your name'
-    },
-    email: {
-        name: 'email',
-        label: 'Email',
-        type: 'email',
-        placeholder: 'Enter your email'
-    }
-};
-const InputComponent = ({ id })=>{
-    _s();
-    // 1. Always call your Hooks unconditionally at the top
-    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const reactId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"])();
-    const { control } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"])();
-    // 2. Then do side effects
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "InputComponent.useEffect": ()=>{
-            setMounted(true);
-        }
-    }["InputComponent.useEffect"], []);
-    // 3. Finally, if you need to bail out of rendering, do so
-    if (!mounted) {
-        return null;
-    }
-    // 4. Now do the rest of your logic
-    const { name, label, type, placeholder } = config[id];
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Controller"], {
-        name: name,
-        control: control,
-        render: ({ field, fieldState: { error } })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        htmlFor: `${name}-${reactId}`,
-                        children: label
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Input/Input.tsx",
-                        lineNumber: 117,
-                        columnNumber: 11
-                    }, void 0),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
-                        ...field,
-                        id: `${name}-${reactId}`,
-                        variant: "outlined",
-                        type: type,
-                        error: !!error,
-                        helperText: error ? error.message : '',
-                        placeholder: placeholder,
-                        fullWidth: true
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Input/Input.tsx",
-                        lineNumber: 118,
-                        columnNumber: 11
-                    }, void 0)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/Input/Input.tsx",
-                lineNumber: 116,
-                columnNumber: 9
-            }, void 0)
-    }, void 0, false, {
-        fileName: "[project]/src/components/Input/Input.tsx",
-        lineNumber: 112,
-        columnNumber: 5
-    }, this);
-};
-_s(InputComponent, "XvR6FufKsbHYGsEx0k8YJX5Ssjs=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"]
-    ];
-});
-_c = InputComponent;
-var _c;
-__turbopack_refresh__.register(_c, "InputComponent");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
 "[project]/src/components/Form/Form.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -690,18 +283,15 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$yup$2f$dist$2f$yup$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@hookform/resolvers/yup/dist/yup.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Form$2f$Schema$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Form/Schema.ts [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2f$PhoneInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Input/PhoneInput.tsx [app-client] (ecmascript)");
+// import { Box } from '@mui/material';
+// import { PhoneInputComponent } from '../Input/PhoneInput';
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Checkbox$2f$Checkbox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Checkbox/Checkbox.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Textarea$2f$Textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Textarea/Textarea.tsx [app-client] (ecmascript)");
+// import { TextareaComponent } from '../Textarea/Textarea';
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Button$2f$Button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Button/Button.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2f$Input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/Input/Input.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 'use client';
-;
-;
-;
 ;
 ;
 ;
@@ -738,53 +328,16 @@ function MyForm() {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2f$Input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InputComponent"], {
-                            id: "name"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 47,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 46,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2f$Input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InputComponent"], {
-                            id: "email"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 50,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 49,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Input$2f$PhoneInput$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PhoneInputComponent"], {}, void 0, false, {
-                            fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 53,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 52,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Checkbox$2f$Checkbox$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             id: "accountingBookkeeping"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 56,
+                            lineNumber: 57,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -792,12 +345,12 @@ function MyForm() {
                             id: "taxReturns"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 59,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -805,12 +358,12 @@ function MyForm() {
                             id: "financialPlanning"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 62,
+                            lineNumber: 63,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 61,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -818,12 +371,12 @@ function MyForm() {
                             id: "companyRegistration"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -831,12 +384,12 @@ function MyForm() {
                             id: "loansBusiness"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 68,
+                            lineNumber: 69,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -844,12 +397,12 @@ function MyForm() {
                             id: "legalContract"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 71,
+                            lineNumber: 72,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 70,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -857,25 +410,12 @@ function MyForm() {
                             id: "other"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 74,
+                            lineNumber: 75,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 73,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Textarea$2f$Textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TextareaComponent"], {
-                            id: "description"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 78,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 77,
+                        lineNumber: 74,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -883,28 +423,28 @@ function MyForm() {
                             id: "send"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Form/Form.tsx",
-                            lineNumber: 81,
+                            lineNumber: 82,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Form/Form.tsx",
-                        lineNumber: 80,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Form/Form.tsx",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Form/Form.tsx",
-            lineNumber: 39,
+            lineNumber: 40,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Form/Form.tsx",
-        lineNumber: 38,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
@@ -1082,4 +622,4 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 }}),
 }]);
 
-//# sourceMappingURL=src_210f93._.js.map
+//# sourceMappingURL=src_8e21c0._.js.map

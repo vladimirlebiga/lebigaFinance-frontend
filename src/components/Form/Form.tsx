@@ -3,10 +3,9 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { InferType } from 'yup';
 import { schemaContact } from './Schema';
-import { Box } from '@mui/material';
 import { PhoneInputComponent } from '../Input/PhoneInput';
 import CheckboxInput from '../Checkbox/Checkbox';
-// import { TextareaComponent } from '../Textarea/Textarea';
+import { TextareaComponent } from '../Textarea/Textarea';
 import { ButtonComponent } from '../Button/Button';
 import { InputComponent } from '../Input/Input';
 
@@ -44,40 +43,40 @@ export function MyForm() {
             void formProps.handleSubmit(onSubmit)(e);
           }}
         >
-          <Box>
+          <div>
             <InputComponent id="name" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <InputComponent id="email" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <PhoneInputComponent />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="accountingBookkeeping" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="taxReturns" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="financialPlanning" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="companyRegistration" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="loansBusiness" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="legalContract" />
-          </Box>
-          <Box>
+          </div>
+          <div>
             <CheckboxInput id="other" />
-          </Box>
+          </div>
 
-          {/* <Box>
+          <div>
             <TextareaComponent id="description" />
-          </Box> */}
+          </div>
           <div>
             <ButtonComponent id="send" />
           </div>
