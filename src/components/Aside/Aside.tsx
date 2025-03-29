@@ -15,7 +15,7 @@ export const Aside = () => {
   return (
     <StyledAside>
       <StyledAsideWrapper>
-        <h2>available 24/7</h2>
+        <h2>available 24/7 e</h2>
       </StyledAsideWrapper>
 
       <StyledIconWrapper>
