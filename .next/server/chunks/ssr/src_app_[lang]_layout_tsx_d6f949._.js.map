@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/app/%5Blang%5D/layout.tsx"],"sourcesContent":["export async function generateStaticParams() {\n  return [{ lang: 'en-US' }, { lang: 'de' }];\n}\n\nexport default async function RootLayout({\n  children,\n  params,\n}: Readonly<{\n  children: React.ReactNode;\n  params: Promise<{ lang: 'en-US' | 'de' }>;\n}>) {\n  return (\n    <html lang={(await params).lang}>\n      <body>{children}</body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAO,eAAe;IACpB,OAAO;QAAC;YAAE,MAAM;QAAQ;QAAG;YAAE,MAAM;QAAK;KAAE;AAC5C;AAEe,eAAe,WAAW,EACvC,QAAQ,EACR,MAAM,EAIN;IACA,qBACE,8OAAC;QAAK,MAAM,CAAC,MAAM,MAAM,EAAE,IAAI;kBAC7B,cAAA,8OAAC;sBAAM;;;;;;;;;;;AAGb"}},
-    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

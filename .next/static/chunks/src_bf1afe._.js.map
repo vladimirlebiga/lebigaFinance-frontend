@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Pages/Styled.tsx"],"sourcesContent":["'use client';\nimport { styled } from '@mui/material/styles';\n\nexport const StyledWrapper = styled('div')(({ theme }) => ({\n  position: 'fixed',\n  top: '0',\n  left: '0',\n  height: '100%',\n  width: '40%',\n  display: 'flex',\n  flexDirection: 'column',\n  justifyContent: 'space-between',\n  gap: '4px',\n  padding: '16px',\n  backgroundColor: theme.palette.primary.main,\n}));\n"],"names":[],"mappings":";;;AACA;AADA;;AAGO,MAAM,gBAAgB,CAAA,GAAA,6MAAA,CAAA,SAAM,AAAD,EAAE,OAAO,CAAC,EAAE,KAAK,EAAE,GAAK,CAAC;QACzD,UAAU;QACV,KAAK;QACL,MAAM;QACN,QAAQ;QACR,OAAO;QACP,SAAS;QACT,eAAe;QACf,gBAAgB;QAChB,KAAK;QACL,SAAS;QACT,iBAAiB,MAAM,OAAO,CAAC,OAAO,CAAC,IAAI;IAC7C,CAAC"}},
-    {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///Users/lebiga/Desktop/ITMap/lebigaFinance/src/components/Pages/HomePage.tsx"],"sourcesContent":["'use client';\nimport React from 'react';\n// import { MyForm } from '../Form/Form';\nimport { Container } from '@mui/material';\n// import { Aside } from '../Aside/Aside';\nimport { StyledWrapper } from './Styled';\n\nexport const HomePage = () => {\n  return (\n    <div>\n      <Container>\n        <StyledWrapper>\n          {/* <Aside /> */}\n          {/* <MyForm /> */}\n        </StyledWrapper>\n      </Container>\n    </div>\n  );\n};\n"],"names":[],"mappings":";;;;AAIA,0CAA0C;AAC1C;AAHA,yCAAyC;AACzC;AAHA;;;;AAOO,MAAM,WAAW;IACtB,qBACE,6LAAC;kBACC,cAAA,6LAAC,sMAAA,CAAA,YAAS;sBACR,cAAA,6LAAC,wIAAA,CAAA,gBAAa;;;;;;;;;;;;;;;AAOtB;KAXa"}},
-    {"offset": {"line": 72, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
