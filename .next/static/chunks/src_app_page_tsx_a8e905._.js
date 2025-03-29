@@ -7,8 +7,10 @@
   "chunks": [
     "static/chunks/node_modules_@mui_material_35c79f._.js",
     "static/chunks/node_modules_mui-tel-input_dist_mui-tel-input_es_334858.js",
-    "static/chunks/node_modules_b2d74c._.js",
-    "static/chunks/src_210f93._.js"
+    "static/chunks/node_modules_react-icons_pi_index_mjs_658a28._.js",
+    "static/chunks/node_modules_react-icons_lib_74ccc9._.js",
+    "static/chunks/node_modules_95cfdc._.js",
+    "static/chunks/src_f526cf._.js"
   ],
   "source": "dynamic"
 });

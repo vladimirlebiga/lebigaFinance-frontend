@@ -48,8 +48,13 @@ export const PhoneInputComponent = () => {
       render={({ field, fieldState: { error } }) => (
         <div>
           {/* Use the stable ID for both label and input */}
-          <label htmlFor={`phone-${reactId}`}>Phone</label>
-          <MuiTelInput {...field} defaultCountry="NL" id={`phone-${reactId}`} />
+          {/* <label htmlFor={`phone-${reactId}`}>Phone</label> */}
+          <MuiTelInput
+            {...field}
+            defaultCountry="NL"
+            label="Phone"
+            id={`phone-${reactId}`}
+          />
           {error && <p style={{ color: 'red' }}>{error.message}</p>}
         </div>
       )}

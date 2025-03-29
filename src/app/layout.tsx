@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Providers from './providers';
+// import { Header } from '@/components/Header/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,6 +21,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" />
+        <title>Create Next App</title>
       </head>
       <body>
         {/* Wrap everything in our Providers component */}

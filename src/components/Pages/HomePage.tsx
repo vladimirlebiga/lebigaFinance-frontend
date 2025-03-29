@@ -3,7 +3,8 @@ import React from 'react';
 import { MyForm } from '../Form/Form';
 import { Container } from '@mui/material';
 import { Aside } from '../Aside/Aside';
-import { StyledWrapper } from './Styled';
+import { StyledBox, StyledNav, StyledWrapper } from './Styled';
+import { Header } from '../Header/Header';
 
 export const HomePage = () => {
   return (
@@ -11,7 +12,14 @@ export const HomePage = () => {
       <Container>
         <StyledWrapper>
           <Aside />
-          <MyForm />
+          <StyledBox>
+            <StyledNav>
+              <header>
+                <Header />
+              </header>
+            </StyledNav>
+            <MyForm />
+          </StyledBox>
         </StyledWrapper>
       </Container>
     </div>

@@ -95,7 +95,7 @@ export const TextareaComponent = ({ id }: InputProps) => {
       control={control}
       render={({ field, fieldState: { error } }) => (
         <div>
-          <label htmlFor={`${name}-${reactId}`}>{label}</label>
+          {/* <label htmlFor={`${name}-${reactId}`}>{label}</label> */}
           <TextField
             multiline
             rows={4}
@@ -105,6 +105,7 @@ export const TextareaComponent = ({ id }: InputProps) => {
             error={!!error}
             helperText={error ? error.message : ''}
             placeholder={placeholder}
+            label={label}
             fullWidth
           />
         </div>

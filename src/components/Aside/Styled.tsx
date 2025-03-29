@@ -1,7 +1,7 @@
 'use client';
 import { styled } from '@mui/material/styles';
 
-export const StyledAside = styled('div')(({ theme }) => ({
+export const StyledAside = styled('aside')(() => ({
   position: 'fixed',
   top: '0',
   left: '0',
@@ -9,8 +9,47 @@ export const StyledAside = styled('div')(({ theme }) => ({
   width: '40%',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-between',
+  alignItems: 'center',
   gap: '4px',
   padding: '16px',
-  backgroundColor: theme.palette.primary.main,
 }));
+
+export const StyledAsideWrapper = styled('div')(() => ({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: '20px 0',
+}));
+
+export const StyledIconWrapper = styled('div')(() => ({
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  margin: '8px 0',
+}));
+
+export const StyledWrapper = styled('div')(() => ({
+  display: 'flex',
+  alignItems: 'center',
+  margin: '8px 0',
+}));
+
+export const StyledSpan = styled('div')(() => ({
+  display: 'flex',
+  alignItems: 'center',
+  margin: '8px 0',
+  fontWeight: 'normal', // ensures the text is not bold
+}));
+
+const StyledH1 = styled('h1')({
+  display: 'flex',
+  alignItems: 'center',
+});
+
+export const HeaderTitle = () => (
+  <StyledH1>
+    <span>LEBIGA</span>
+    <span style={{ fontWeight: 'normal', marginLeft: '8px' }}>FINANCE</span>
+  </StyledH1>
+);
