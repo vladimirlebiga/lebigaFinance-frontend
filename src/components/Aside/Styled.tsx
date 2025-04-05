@@ -36,10 +36,11 @@ export const StyledWrapper = styled('div')(() => ({
 }));
 
 export const StyledSpan = styled('div')(() => ({
-  display: 'flex',
-  alignItems: 'center',
-  margin: '8px 0',
-  fontWeight: 'normal', // ensures the text is not bold
+  // display: 'flex',
+  // alignItems: 'center',
+  margin: '8px 5%',
+  fontWeight: 'bold', // ensures the text is not bold
+  fontSize: '2.5rem',
 }));
 
 const StyledH1 = styled('h1')({

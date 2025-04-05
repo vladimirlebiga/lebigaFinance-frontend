@@ -1,5 +1,10 @@
 import React from 'react';
+import { StyledFooter } from './Styled';
 
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <StyledFooter>
+      <p>&copy; 2025 LEBIGA FINANCE. All rights reserved.</p>
+    </StyledFooter>
+  );
 };

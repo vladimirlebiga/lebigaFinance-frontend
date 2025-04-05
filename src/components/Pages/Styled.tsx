@@ -18,5 +18,5 @@ export const StyledBox = styled('div')(() => ({
 }));
 
 export const StyledNav = styled('div')(() => ({
-  backgroundColor: '#f0f0f0', // optional: background color
+  //   backgroundColor: '#f0f0f0', // optional: background color
 }));

@@ -36,53 +36,55 @@ export function MyForm() {
   };
 
   return (
-    <StyledFormWrapper>
-      <FormProvider {...formProps}>
-        <StyledForm
-          onSubmit={(e) => {
-            e.preventDefault();
-            void formProps.handleSubmit(onSubmit)(e);
-          }}
-        >
-          <div>
-            <InputComponent id="name" />
-          </div>
-          <div>
-            <InputComponent id="email" />
-          </div>
-          <div>
-            <PhoneInputComponent />
-          </div>
-          <div>
-            <CheckboxInput id="accountingBookkeeping" />
-          </div>
-          <div>
-            <CheckboxInput id="taxReturns" />
-          </div>
-          <div>
-            <CheckboxInput id="financialPlanning" />
-          </div>
-          <div>
-            <CheckboxInput id="companyRegistration" />
-          </div>
-          <div>
-            <CheckboxInput id="loansBusiness" />
-          </div>
-          <div>
-            <CheckboxInput id="legalContract" />
-          </div>
-          <div>
-            <CheckboxInput id="other" />
-          </div>
+    <section id="contact">
+      <StyledFormWrapper>
+        <FormProvider {...formProps}>
+          <StyledForm
+            onSubmit={(e) => {
+              e.preventDefault();
+              void formProps.handleSubmit(onSubmit)(e);
+            }}
+          >
+            <div>
+              <InputComponent id="name" />
+            </div>
+            <div>
+              <InputComponent id="email" />
+            </div>
+            <div>
+              <PhoneInputComponent />
+            </div>
+            <div>
+              <CheckboxInput id="accountingBookkeeping" />
+            </div>
+            <div>
+              <CheckboxInput id="taxReturns" />
+            </div>
+            <div>
+              <CheckboxInput id="financialPlanning" />
+            </div>
+            <div>
+              <CheckboxInput id="companyRegistration" />
+            </div>
+            <div>
+              <CheckboxInput id="loansBusiness" />
+            </div>
+            <div>
+              <CheckboxInput id="legalContract" />
+            </div>
+            <div>
+              <CheckboxInput id="other" />
+            </div>
 
-          <div>
-            <TextareaComponent id="description" />
-          </div>
-          <div>
-            <ButtonComponent id="send" />
-          </div>
-        </StyledForm>
-      </FormProvider>
-    </StyledFormWrapper>
+            <div>
+              <TextareaComponent id="description" />
+            </div>
+            <div>
+              <ButtonComponent id="send" />
+            </div>
+          </StyledForm>
+        </FormProvider>
+      </StyledFormWrapper>
+    </section>
   );
 }

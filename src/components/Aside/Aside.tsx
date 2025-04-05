@@ -6,36 +6,40 @@ import {
   StyledWrapper,
   StyledIconWrapper,
   HeaderTitle,
+  StyledSpan,
 } from './Styled';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 import PhoneSharpIcon from '@mui/icons-material/PhoneSharp';
 import ContactMailSharpIcon from '@mui/icons-material/ContactMailSharp';
+import Link from 'next/link';
+import { Footer } from '../Footer/Footer';
 
 export const Aside = () => {
   return (
     <StyledAside>
       <StyledAsideWrapper>
-        <h2>available 24/7 e</h2>
+        <h2>available </h2>
+        <StyledSpan>24/7</StyledSpan>
       </StyledAsideWrapper>
 
       <StyledIconWrapper>
         <div>
           <HeaderTitle />
-          {/* LEBIGA <StyledSpan>FINANCE</StyledSpan> */}
         </div>
         <StyledWrapper>
           <MailSharpIcon style={{ marginRight: '8px' }} />
-          <span>finance@lebiga.nl</span>
+          <a href="mailTo:finance@lebiga.nl">finance@lebiga.nl</a>
         </StyledWrapper>
         <StyledWrapper>
           <PhoneSharpIcon style={{ marginRight: '8px' }} />
-          <span>+31 (0) 6 20 87 66 06</span>
+          <a href="tel:+31620876606">+31 (0) 6 20 87 66 06</a>
         </StyledWrapper>
         <StyledWrapper>
           <ContactMailSharpIcon style={{ marginRight: '8px' }} />
-          <span>contact us</span>
+          <Link href="#contact">contact us</Link>
         </StyledWrapper>
       </StyledIconWrapper>
+      <Footer />
     </StyledAside>
   );
 };
