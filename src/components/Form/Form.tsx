@@ -8,7 +8,12 @@ import CheckboxInput from '../Checkbox/Checkbox';
 import { TextareaComponent } from '../Textarea/Textarea';
 import { ButtonComponent } from '../Button/Button';
 import { InputComponent } from '../Input/Input';
-import { StyledForm, StyledFormWrapper } from './Styled';
+import {
+  StyledForm,
+  StyledFormWrapper,
+  StyledSection,
+  StyledHeader,
+} from './Styled';
 
 // Infer your form type directly from the schema:
 type FormValues = InferType<typeof schemaContact>;
@@ -36,8 +41,9 @@ export function MyForm() {
   };
 
   return (
-    <section id="contact">
+    <StyledSection id="contact">
       <StyledFormWrapper>
+        <StyledHeader>Contact Form</StyledHeader>
         <FormProvider {...formProps}>
           <StyledForm
             onSubmit={(e) => {
@@ -85,6 +91,6 @@ export function MyForm() {
           </StyledForm>
         </FormProvider>
       </StyledFormWrapper>
-    </section>
+    </StyledSection>
   );
 }

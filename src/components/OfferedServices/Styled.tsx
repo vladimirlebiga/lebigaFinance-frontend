@@ -10,6 +10,16 @@ export const StyledText = styled('p')(() => ({
   fontWeight: 'bold',
 }));
 
+export const StyledSection = styled('section')(() => ({
+  paddingTop: '60px',
+  paddingBottom: '250px',
+}));
+
+export const StyledHeader = styled('h2')(() => ({
+  fontSize: '1.4rem',
+  fontWeight: 'bold',
+}));
+
 // export const StyledSpan = styled('p')(() => ({
 //   fontWeight: 'bold',
 // }));

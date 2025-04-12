@@ -25,7 +25,6 @@ interface ButtonProps {
 
 export const ButtonComponent = ({ id }: ButtonProps) => {
   const { variant, endIcon, text, type } = config[id];
-  console.log(text);
   return (
     <Button variant={variant} endIcon={endIcon} type={type}>
       {text}

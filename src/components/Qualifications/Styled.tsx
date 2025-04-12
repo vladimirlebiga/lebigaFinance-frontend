@@ -8,3 +8,13 @@ export const StyledParagraph = styled('p')(() => ({
 export const StyledSpan = styled('span')(() => ({
   fontWeight: 'bold',
 }));
+
+export const StyledSection = styled('section')(() => ({
+  paddingTop: '60px',
+  paddingBottom: '250px',
+}));
+
+export const StyledHeader = styled('h2')(() => ({
+  fontSize: '1.4rem',
+  fontWeight: 'bold',
+}));

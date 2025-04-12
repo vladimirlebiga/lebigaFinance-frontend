@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyledParagraph } from './Styled';
+import { StyledParagraph, StyledSection, StyledHeader } from './Styled';
 
 export const AboutUs = () => {
   return (
-    <section id="about">
+    <StyledSection id="about">
       <article>
+        <StyledHeader>About Us</StyledHeader>
         <StyledParagraph>
           hi, I'm Vlada, your go-to expert for financial clarity and stress-free
           living. Since the age of 18, finance has not just been my profession
@@ -28,6 +29,6 @@ export const AboutUs = () => {
           financial solutions that reduce stress and drive success.
         </StyledParagraph>
       </article>
-    </section>
+    </StyledSection>
   );
 };

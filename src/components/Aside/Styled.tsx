@@ -2,11 +2,21 @@
 import { styled } from '@mui/material/styles';
 
 export const StyledAside = styled('aside')(() => ({
-  position: 'fixed',
-  top: '0',
-  left: '0',
   height: '100%',
-  width: '40%',
+  gridColumn: '1 / 3',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '4px',
+  padding: '16px',
+}));
+
+export const StyledSticky = styled('div')(() => ({
+  position: 'fixed',
+  // top: '40px',
+  left: '0',
+  height: '100vh',
+  width: '40vw',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -39,8 +49,8 @@ export const StyledSpan = styled('div')(() => ({
   // display: 'flex',
   // alignItems: 'center',
   margin: '8px 5%',
-  fontWeight: 'bold', // ensures the text is not bold
-  fontSize: '2.5rem',
+  fontWeight: 'normal', // ensures the text is not bold
+  fontSize: '5rem',
 }));
 
 const StyledH1 = styled('h1')({

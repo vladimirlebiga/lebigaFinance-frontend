@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyledParagraph, StyledText } from './Styled';
+import {
+  StyledParagraph,
+  StyledText,
+  StyledHeader,
+  StyledSection,
+} from './Styled';
 
 export const OfferedServices = () => {
   return (
-    <section id="services">
+    <StyledSection id="services">
       <article>
+        <StyledHeader>Offered Services</StyledHeader>
         <StyledText> Company Registration & Setup:</StyledText>
         <StyledParagraph>
           Get your business (ZZP, BV, Holding) up and running smoothly with
@@ -32,6 +38,6 @@ export const OfferedServices = () => {
           Navigate contracts and financial agreements with confidence.
         </StyledParagraph>
       </article>
-    </section>
+    </StyledSection>
   );
 };

@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyledParagraph } from './Styled';
+import { StyledParagraph, StyledHeader, StyledSection } from './Styled';
 
 export const PricePolicy = () => {
   return (
-    <section id="price-policy">
+    <StyledSection id="price-policy">
       <article>
+        <StyledHeader>Price Policy</StyledHeader>
         <StyledParagraph>
           First 15 MIN. - FREE consultation. We believe in transparency. That's
           why your first 15-minute consultation is completely free—no
@@ -34,6 +35,6 @@ export const PricePolicy = () => {
           on the project scope.
         </StyledParagraph>
       </article>
-    </section>
+    </StyledSection>
   );
 };

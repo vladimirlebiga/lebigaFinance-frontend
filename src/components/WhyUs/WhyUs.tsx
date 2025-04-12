@@ -1,10 +1,17 @@
 import React from 'react';
-import { StyledParagraph, StyledText } from './Styled';
+import {
+  StyledParagraph,
+  StyledText,
+  StyledHeader,
+  StyledSection,
+} from './Styled';
 
 export const WhyUs = () => {
   return (
-    <section id="why-us">
+    <StyledSection id="why-us">
       <article>
+        <StyledHeader>Why Us</StyledHeader>
+        <StyledText></StyledText>
         <StyledParagraph>
           When it comes to managing your finances, you deserve nothing less than
           reliable excellence. Here's why I'm the ideal partner for your
@@ -34,6 +41,6 @@ export const WhyUs = () => {
           No hidden fees, just simple and fair pricing for premium service.
         </StyledParagraph>
       </article>
-    </section>
+    </StyledSection>
   );
 };

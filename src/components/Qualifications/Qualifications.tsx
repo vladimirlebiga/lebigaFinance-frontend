@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyledParagraph, StyledSpan } from './Styled';
+import {
+  StyledHeader,
+  StyledParagraph,
+  StyledSpan,
+  StyledSection,
+} from './Styled';
 
 export const Qualifications = () => {
   return (
-    <section id="qualifications">
+    <StyledSection id="qualifications">
       <article>
+        <StyledHeader>Qualifications & Professional Background</StyledHeader>
         <StyledParagraph>
           I built my expertise on a strong foundation of academic and
           professional qualifications.
@@ -58,6 +64,6 @@ export const Qualifications = () => {
           excellence.
         </StyledParagraph>
       </article>
-    </section>
+    </StyledSection>
   );
 };

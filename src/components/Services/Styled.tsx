@@ -12,3 +12,8 @@ export const StyledServices = styled('li')(() => ({
 export const StyledParagraph = styled('p')(() => ({
   padding: '20px 0',
 }));
+
+export const StyledSection = styled('section')(() => ({
+  //   paddingTop: '60px',
+  paddingBottom: '250px',
+}));

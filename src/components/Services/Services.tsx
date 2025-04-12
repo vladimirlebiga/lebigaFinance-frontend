@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledParagraph, StyledServices } from './Styled';
+import { StyledParagraph, StyledServices, StyledSection } from './Styled';
 
 const servicesConfig: string[] = [
   'Company registration & setup (ZZP, BV, Holding, Stichting)',
@@ -11,7 +11,7 @@ const servicesConfig: string[] = [
 ];
 export const Services = () => {
   return (
-    <section id="home">
+    <StyledSection id="home">
       <ul>
         {servicesConfig.map((service) => (
           <StyledServices key={service}>{service}</StyledServices>
@@ -25,6 +25,6 @@ export const Services = () => {
       <StyledParagraph>
         Call us today for a free consultation and let us handle the rest!
       </StyledParagraph>
-    </section>
+    </StyledSection>
   );
 };

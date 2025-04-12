@@ -20,9 +20,7 @@ export const HomePage = () => {
           <Aside />
           <StyledBox>
             <StyledNav>
-              <header>
-                <Header />
-              </header>
+              <Header />
             </StyledNav>
             <Services />
             <AboutUs />
