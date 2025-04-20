@@ -17,8 +17,8 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-x: hidden;
+  overflow-y: auto; */
 }
 
 body {
@@ -63,12 +63,18 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: #333;
-  -webkit-box-shadow: 0 0 0px 1000px #FEDCC7 inset;
-  box-shadow: 0 0 0px 1000px #FEDCC7 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: inherit;
 }
 
 /* @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: dark; 
   }
+
+   -webkit-box-shadow: 0 0 0px 1000px #FEDCC7 inset;
+box-shadow: 0 0 0px 1000px #FEDCC7 inset !important;
+
 } */
+
+

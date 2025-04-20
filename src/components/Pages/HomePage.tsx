@@ -3,7 +3,15 @@ import React from 'react';
 import { MyForm } from '../Form/Form';
 import { Container } from '@mui/material';
 import { Aside } from '../Aside/Aside';
-import { StyledBox, StyledNav, StyledWrapper } from './Styled';
+import {
+  StyledBox,
+  StyledWrapper,
+  StyledSection,
+  StyledNewImgOne,
+  StyledNewImgTwo,
+  StyledLink,
+  StyledIcon,
+} from './Styled';
 import { Header } from '../Header/Header';
 import { Services } from '../Services/Services';
 import { AboutUs } from '../AboutUs/AboutUs';
@@ -19,10 +27,11 @@ export const HomePage = () => {
         <StyledWrapper>
           <Aside />
           <StyledBox>
-            <StyledNav>
-              <Header />
-            </StyledNav>
+            <StyledNewImgOne />
+            <StyledNewImgTwo />
+            <Header />
             <Services />
+            <StyledSection />
             <AboutUs />
             <WhyUs />
             <OfferedServices />
@@ -30,6 +39,9 @@ export const HomePage = () => {
             <PricePolicy />
             <MyForm />
           </StyledBox>
+          <StyledLink href="#home">
+            <StyledIcon />
+          </StyledLink>
         </StyledWrapper>
       </Container>
     </div>

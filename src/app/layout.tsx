@@ -5,7 +5,8 @@ import Providers from './providers';
 
 export const metadata: Metadata = {
   title: 'LEBIGA FINANCE',
-  description: 'LEBIGA FINANCE',
+  description:
+    'Key words: finance, investment, consulting, accounting, tax, audit',
 };
 
 export default function RootLayout({

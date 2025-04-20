@@ -8,6 +8,9 @@ import {
   HeaderTitle,
   StyledSpan,
   StyledSticky,
+  StyledNewImg,
+  StyledNewImgDoc,
+  StyledNewImgOrange,
 } from './Styled';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
 import PhoneSharpIcon from '@mui/icons-material/PhoneSharp';
@@ -18,6 +21,9 @@ import { Footer } from '../Footer/Footer';
 export const Aside = () => {
   return (
     <StyledAside>
+      <StyledNewImgOrange />
+      <StyledNewImg />
+      <StyledNewImgDoc />
       <StyledSticky>
         <StyledAsideWrapper>
           <h2>available </h2>

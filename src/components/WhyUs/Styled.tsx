@@ -13,6 +13,10 @@ export const StyledText = styled('p')(() => ({
 export const StyledSection = styled('section')(() => ({
   paddingTop: '60px',
   paddingBottom: '250px',
+  // backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526796/slide_3_1_osei84.png)`,
+  // backgroundSize: '400px 400px',
+  // backgroundPosition: 'bottom 20% right -10%',
+  // backgroundRepeat: 'no-repeat',
 }));
 
 export const StyledHeader = styled('h2')(() => ({

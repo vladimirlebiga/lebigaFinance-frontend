@@ -2,6 +2,7 @@
 import { styled } from '@mui/material/styles';
 
 export const StyledAside = styled('aside')(() => ({
+  position: 'relative',
   height: '100%',
   gridColumn: '1 / 3',
   display: 'flex',
@@ -11,9 +12,41 @@ export const StyledAside = styled('aside')(() => ({
   padding: '16px',
 }));
 
+export const StyledNewImgOrange = styled('div')(() => ({
+  position: 'absolute', // Use absolute positioning relative to StyledAside
+  // backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744829456/slide_3_zmklbo.png)`,
+  bottom: '60%',
+  left: '20%',
+  width: '400px',
+  height: '400px',
+  backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526813/slide_3_e5higr.png)`,
+  backgroundSize: '400px 400px',
+  backgroundPosition: 'bottom 63% left 99%',
+  backgroundRepeat: 'no-repeat',
+}));
+
+// New styled component for the image
+export const StyledNewImg = styled('div')(() => ({
+  position: 'absolute', // Use absolute positioning relative to StyledAside
+  backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526772/slide_4_1_pvjhos.png)`,
+  bottom: '48%',
+  left: '30%',
+  width: '400px',
+  height: '400px',
+}));
+
+// New styled component for the image
+export const StyledNewImgDoc = styled('div')(() => ({
+  position: 'absolute', // Use absolute positioning relative to StyledAside
+  backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526756/slide_5_wn9wii.png)`,
+  bottom: '41%',
+  left: '30%',
+  width: '400px',
+  height: '400px',
+}));
+
 export const StyledSticky = styled('div')(() => ({
   position: 'fixed',
-  // top: '40px',
   left: '0',
   height: '100vh',
   width: '40vw',
@@ -40,6 +73,7 @@ export const StyledIconWrapper = styled('div')(() => ({
 }));
 
 export const StyledWrapper = styled('div')(() => ({
+  position: 'relative',
   display: 'flex',
   alignItems: 'center',
   margin: '8px 0',
