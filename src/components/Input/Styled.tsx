@@ -24,7 +24,7 @@ import { TextField } from '@mui/material';
 //     },
 // }));
 
-export const StyledTextField = styled(TextField)(({ theme }) => ({
+export const StyledTextField = styled(TextField)(() => ({
   backgroundColor: 'transparent',
 
   // target the OutlinedInput slot…
