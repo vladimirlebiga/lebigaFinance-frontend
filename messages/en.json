@@ -1,0 +1,83 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "email": "finance@lebiga.nl",
+    "phone": "+31 (0) 6 20 87 66 06"
+  },
+  "menu": [
+    { "title": "About Us" },
+    { "title": "Qualifications & Professional Background" },
+    { "title": "Why Us" },
+    { "title": "Offered Services" },
+    { "title": "Price Policy" }
+  ],
+  "aside": {
+    "title": "available 24/7",
+    "subTitle": "LEBIGA FINANCE",
+    "contactUs": "contact us"
+  },
+  "services": {
+    "services": [
+      { "title": "Company registration & setup (ZZP, BV, Holding, Stichting)" },
+      { "title": "Tax returns - personal & business" },
+      { "title": "Accounting & Bookkeeping" },
+      { "title": "Financial planning & tax optimization" },
+      { "title": "Loans & business credit applications" },
+      { "title": "Legal & contract support" }
+    ],
+    "intro": "We speak your language and take care of everything—so you don't have to! Enjoy a simple, stress-free financial experience with experts who ensure you get every possible benefit.",
+    "callToAction": "Call us today for a free consultation and let us handle the rest!"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Hi, I'm Vlada, your go-to expert for financial clarity and stress-free living. Since the age of 18, finance has not just been my profession but my passion. I hold both a Bachelor's and a Master's degree in finance and accounting, and I've spent my career helping freelancers, small business owners, and individuals overcome the hurdles of financial management. Whether it's navigating tax complexities or making sense of your company's numbers, I'm here to make finances effortless, so you can focus on what you do best. With years of experience across industries like retail, manufacturing, and tech, I understand the unique challenges businesses and individuals face. My goal is simple—to empower you with tailored financial solutions that reduce stress and drive success."
+  },
+  "whyUs": {
+    "title": "Why Us",
+    "points": [
+      {
+        "title": "Expertise You Can Count On",
+        "description": "With years of experience and internationally recognized credentials, I offer solutions you can trust."
+      },
+      {
+        "title": "Tailored to You",
+        "description": "I understand every client's story is unique—that's why I customize my services to meet your specific goals."
+      },
+      {
+        "title": "Stress-Free Finances",
+        "description": "Leave the paperwork to me and focus on growing your business."
+      },
+      {
+        "title": "Maximized Tax Savings",
+        "description": "I ensure full compliance with Dutch tax regulations while saving you as much as possible."
+      },
+      {
+        "title": "Transparent Pricing",
+        "description": "No hidden fees, just simple and fair pricing for premium service."
+      }
+    ]
+  },
+  "qualifications": {
+    "title": "Qualifications & Professional Background",
+    "items": [
+      "Bachelor's and Master's degrees in finance and accounting from top European institutions.",
+      "Practical experience with leading international companies in retail, manufacturing, and technology sectors: conducted financial analyses, managed audits, prepared budgets, and implemented automated solutions.",
+      "ACCA Certification ensuring work meets the highest international accounting standards.",
+      "Specialized training: advanced knowledge of IFRS standards, tax regulations, financial analysis, and strategic forecasting.",
+      "Hands-on expertise: crafting financial statements, profit & loss reports, cash flow analyses; conducting audits; ensuring cross-jurisdictional compliance; implementing financial automation tools; spearheading budget planning and forecasting; advising on tax savings and financial strategies; training and leading finance teams."
+    ]
+  },
+  "pricePolicy": {
+    "title": "Price Policy",
+    "firstConsultation": "First 15 MIN. - FREE consultation. We believe in transparency. That's why your first 15-minute consultation is completely free—no commitment, just answers.",
+    "standardRate": "€16 per hour (ex. BTW). Our services, including financial estimations, planning, and advisory support, are billed at €16 per hour (excluding VAT).",
+    "paymentTerms": "50/50 split: 50% based on a preliminary estimate before we start; 50% after completion—remaining balance is paid once all work is done.",
+    "timeTracking": "Transparent time tracking: every week, you will receive a detailed report with time spent on your project and remaining prepaid hours.",
+    "preliminaryEstimation": "Please contact us for a preliminary estimation based on a rate of €60 per hour or a fixed price, determined by project scope."
+  },
+  "contactForm": {
+    "title": "Contact Form",
+    "sendButtonText": "Send"
+  }
+}
+

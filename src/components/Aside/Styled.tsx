@@ -1,5 +1,7 @@
 'use client';
 import { styled } from '@mui/material/styles';
+import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
+import Link from 'next/link';
 
 export const StyledAside = styled('aside')(() => ({
   position: 'relative',
@@ -11,19 +13,6 @@ export const StyledAside = styled('aside')(() => ({
   gap: '4px',
   padding: '16px',
 }));
-
-// export const StyledNewImgOrange = styled('div')(() => ({
-// position: 'absolute', // Use absolute positioning relative to StyledAside
-// // backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744829456/slide_3_zmklbo.png)`,
-// bottom: '60%',
-// left: '20%',
-// width: '400px',
-// height: '400px',
-// backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526813/slide_3_e5higr.png)`,
-// backgroundSize: '400px 400px',
-// backgroundPosition: 'bottom 63% left 99%',
-// backgroundRepeat: 'no-repeat',
-// }));
 
 export const StyledNewImgOrange = styled('div')(() => ({
   position: 'absolute', // Use absolute positioning relative to StyledAside
@@ -105,9 +94,59 @@ const StyledH1 = styled('h1')({
   alignItems: 'center',
 });
 
+export const StyledLang = styled('button')(() => ({
+  // position: 'relative',
+  borderRadius: '50%',
+  // bottom: '100px',
+  backgroundColor: 'transparent',
+}));
+
+export const StyledLangButtonWrapper = styled('div')(() => ({
+  position: 'relative',
+  backgroundColor: 'transparent',
+  bottom: '100px',
+}));
+
+export const StyledIcon = styled(LanguageSharpIcon)(() => ({
+  color: '#333333',
+  fontSize: '3.5rem',
+}));
+
 export const HeaderTitle = () => (
   <StyledH1>
     <span>LEBIGA</span>
     <span style={{ fontWeight: 'normal', marginLeft: '8px' }}>FINANCE</span>
   </StyledH1>
 );
+
+export const StyledLangWrapper = styled('div')(() => ({
+  position: 'absolute',
+  top: '0',
+  right: '-30%',
+}));
+
+export const StyledNed = styled(Link)(() => ({
+  position: 'absolute',
+  top: '-40px',
+  left: '-20px',
+}));
+
+export const StyledUkr = styled(Link)(() => ({
+  position: 'absolute',
+  top: '-20px',
+  left: '0',
+}));
+
+export const StyledEng = styled(Link)(() => ({
+  position: 'absolute',
+  top: '0',
+  left: '20px',
+}));
+
+export const StyledRus = styled(Link)(() => ({
+  position: 'absolute',
+  top: '20px',
+  left: '40px',
+}));
+
+// import Brightness3OutlinedIcon from '@mui/icons-material/Brightness3Outlined';
