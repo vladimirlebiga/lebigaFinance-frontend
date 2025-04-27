@@ -121,7 +121,7 @@ export const HeaderTitle = () => (
 
 export const StyledLangWrapper = styled('div')(() => ({
   position: 'absolute',
-  top: '0',
+  bottom: '100%',
   right: '-30%',
 }));
 

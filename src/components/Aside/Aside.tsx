@@ -25,11 +25,25 @@ import PhoneSharpIcon from '@mui/icons-material/PhoneSharp';
 import ContactMailSharpIcon from '@mui/icons-material/ContactMailSharp';
 import Link from 'next/link';
 import { Footer } from '../Footer/Footer';
+import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
+import { useTranslation } from '@/hooks/useTranslation';
+
+// export default function Aside() {
+//   const { t } = useTranslation();
+
+//   return <aside>{t('aside.contactUs')}</aside>;
+// }
 
 export const Aside: React.FC = () => {
   const [shown, setShown] = useState<boolean>(false);
   // Let TypeScript infer the ref type; it will be HTMLDivElement | null
   const langRef = useRef<HTMLButtonElement>(null);
+  const { t } = useTranslation();
+
+  // const { locale, t } = useTranslation();
+  // const t = useTranslation();
+  // const title = t.t('aside');
+  // console.log(title);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -49,7 +63,7 @@ export const Aside: React.FC = () => {
       <StyledNewImgDoc />
       <StyledSticky>
         <StyledAsideWrapper>
-          <h2>available </h2>
+          <h2>{t('aside.title')}</h2>
           <StyledSpan>24/7</StyledSpan>
         </StyledAsideWrapper>
 
@@ -67,7 +81,7 @@ export const Aside: React.FC = () => {
           </StyledWrapper>
           <StyledWrapper>
             <ContactMailSharpIcon style={{ marginRight: '8px' }} />
-            <Link href="#contact">contact us</Link>
+            <Link href="#contact">{t('aside.contactUs')}</Link>
           </StyledWrapper>
         </StyledIconWrapper>
         {/* Language selector with click-outside detection */}
@@ -75,6 +89,7 @@ export const Aside: React.FC = () => {
           <StyledLang ref={langRef} onClick={() => setShown((prev) => !prev)}>
             <StyledIcon />
           </StyledLang>
+          <LanguageSwitcher />
           {shown && (
             <StyledLangWrapper>
               <StyledNed href="">NED</StyledNed>
