@@ -1,31 +1,7 @@
-// 'use client';
-// import React from 'react';
-// import { Controller, useFormContext } from 'react-hook-form';
-// import { MuiTelInput } from 'mui-tel-input';
-
-// export const PhoneInputComponent = () => {
-//   const { control } = useFormContext();
-
-//   return (
-//     <Controller
-//       name="phone"
-//       control={control}
-//       rules={{ required: 'Phone number is required' }}
-//       render={({ field, fieldState: { error } }) => (
-//         <div>
-//           <label htmlFor="phone">Phone</label>
-//           <MuiTelInput {...field} defaultCountry="NL" />
-//           {error && <p style={{ color: 'red' }}>{error.message}</p>}
-//         </div>
-//       )}
-//     />
-//   );
-// };
-
 'use client';
 import React, { useState, useEffect, useId } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
-import { MuiTelInput } from 'mui-tel-input';
+import { StyledTelInput } from './Styled';
 
 export const PhoneInputComponent = () => {
   // 1. Ensure hooks are always called in the same order
@@ -49,7 +25,7 @@ export const PhoneInputComponent = () => {
         <div>
           {/* Use the stable ID for both label and input */}
           {/* <label htmlFor={`phone-${reactId}`}>Phone</label> */}
-          <MuiTelInput
+          <StyledTelInput
             {...field}
             defaultCountry="NL"
             label="Phone"

@@ -36,8 +36,24 @@ export function MyForm() {
     resolver: yupResolver(schemaContact),
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
+  const onSubmit = async (data: FormValues) => {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        // Show success message or reset form
+        alert('Message sent!');
+        formProps.reset();
+      } else {
+        // Show error message
+        alert('There was an error sending your message.');
+      }
+    } catch {
+      alert('There was an error sending your message.');
+    }
   };
 
   return (
