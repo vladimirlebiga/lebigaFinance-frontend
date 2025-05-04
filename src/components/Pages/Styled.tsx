@@ -31,7 +31,7 @@ export const StyledSection = styled('section')(() => ({
 // New styled component for the image
 export const StyledNewImgOne = styled('div')(() => ({
   position: 'absolute', // Use absolute positioning relative to StyledAside
-  bottom: '60%',
+  bottom: '64%',
   left: '80%',
   width: '400px',
   height: '400px',

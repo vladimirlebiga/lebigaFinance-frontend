@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import {
   StyledAside,
   StyledAsideWrapper,
@@ -11,13 +11,13 @@ import {
   StyledNewImg,
   StyledNewImgDoc,
   StyledNewImgOrange,
-  StyledLang,
-  StyledIcon,
-  StyledNed,
-  StyledUkr,
-  StyledEng,
-  StyledRus,
-  StyledLangWrapper,
+  // StyledLang,
+  // StyledIcon,
+  // StyledNed,
+  // StyledUkr,
+  // StyledEng,
+  // StyledRus,
+  // StyledLangWrapper,
   StyledLangButtonWrapper,
 } from './Styled';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
@@ -28,33 +28,8 @@ import { Footer } from '../Footer/Footer';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { useTranslation } from '@/hooks/useTranslation';
 
-// export default function Aside() {
-//   const { t } = useTranslation();
-
-//   return <aside>{t('aside.contactUs')}</aside>;
-// }
-
 export const Aside: React.FC = () => {
-  const [shown, setShown] = useState<boolean>(false);
-  // Let TypeScript infer the ref type; it will be HTMLDivElement | null
-  const langRef = useRef<HTMLButtonElement>(null);
   const { t } = useTranslation();
-
-  // const { locale, t } = useTranslation();
-  // const t = useTranslation();
-  // const title = t.t('aside');
-  // console.log(title);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      const targetNode = e.target as Node;
-      if (langRef.current && !langRef.current.contains(targetNode)) {
-        setShown(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
 
   return (
     <StyledAside>
@@ -86,18 +61,26 @@ export const Aside: React.FC = () => {
         </StyledIconWrapper>
         {/* Language selector with click-outside detection */}
         <StyledLangButtonWrapper>
-          <StyledLang ref={langRef} onClick={() => setShown((prev) => !prev)}>
+          {/* <StyledLang ref={langRef} onClick={() => setShown((prev) => !prev)}>
             <StyledIcon />
-          </StyledLang>
+          </StyledLang> */}
           <LanguageSwitcher />
-          {shown && (
+          {/* {shown && (
             <StyledLangWrapper>
-              <StyledNed href="">NED</StyledNed>
-              <StyledUkr href="">УКР</StyledUkr>
-              <StyledEng href="">ENG</StyledEng>
-              <StyledRus href="">РУС</StyledRus>
+              <StyledNed href="/nl" locale="nl">
+                NED
+              </StyledNed>
+              <StyledUkr href="/uk" locale="uk">
+                УКР
+              </StyledUkr>
+              <StyledEng href="/en" locale="en">
+                ENG
+              </StyledEng>
+              <StyledRus href="/ru" locale="ru">
+                РУС
+              </StyledRus>
             </StyledLangWrapper>
-          )}
+          )} */}
         </StyledLangButtonWrapper>
         <Footer />
       </StyledSticky>

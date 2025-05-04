@@ -14,6 +14,6 @@ export const StyledParagraph = styled('p')(() => ({
 }));
 
 export const StyledSection = styled('section')(() => ({
-  //   paddingTop: '60px',
+  paddingTop: '60px',
   paddingBottom: '250px',
 }));

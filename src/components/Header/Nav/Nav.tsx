@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Person2SharpIcon from '@mui/icons-material/Person2Sharp';
 import SchoolSharpIcon from '@mui/icons-material/SchoolSharp';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
@@ -16,7 +16,6 @@ interface NavItem {
   icon: React.ElementType;
   link: string;
   isMuiIcon: boolean;
-  className?: string;
   scrolledClass?: string;
 }
 
@@ -26,7 +25,6 @@ const navMenu: NavItem[] = [
     icon: Person2SharpIcon,
     link: '#about',
     isMuiIcon: true,
-    className: '2/1/6/2', // Grid location
     scrolledClass: '2/1/3/2',
   },
   {
@@ -34,7 +32,6 @@ const navMenu: NavItem[] = [
     icon: SchoolSharpIcon,
     link: '#qualifications',
     isMuiIcon: true,
-    className: '7/1/11/2', // Grid location
     scrolledClass: '2/2/3/3',
   },
   {
@@ -43,7 +40,6 @@ const navMenu: NavItem[] = [
     icon: PiHandHeartFill,
     link: '#why-us',
     isMuiIcon: false,
-    className: '4/3/9/4', // Grid location
     scrolledClass: '2/3/3/4',
   },
   {
@@ -51,7 +47,6 @@ const navMenu: NavItem[] = [
     icon: SearchSharpIcon,
     link: '#services',
     isMuiIcon: true,
-    className: '2/5/6/6', // Grid location
     scrolledClass: '2/4/3/5',
   },
   {
@@ -60,33 +55,46 @@ const navMenu: NavItem[] = [
     icon: PiCoinsBold,
     link: '#price-policy',
     isMuiIcon: false,
-    className: '5/5/11/6', // Grid location
     scrolledClass: '2/5/3/6',
   },
 ];
 
-interface NavProps {
-  scrolled: boolean;
-}
+export const Nav = () => {
+  const [textShown, setTextShown] = useState<string | null>(null);
+  const handleMouseEnter = (title: string) => {
+    setTextShown(title);
+    console.log('textShown', textShown);
+  };
+  const handleMouseOut = () => {
+    setTextShown(null);
+    console.log('textShown', textShown);
+  };
 
-export const Nav = ({ scrolled }: NavProps) => {
   return (
     <NavContainer>
-      <StyledUl scrolled={scrolled}>
+      <StyledUl>
         {navMenu.map((item) => (
           <StyledLi
             key={item.title}
-            area={item.className}
             smallArea={item.scrolledClass}
-            scrolled={scrolled}
+            onMouseEnter={() => handleMouseEnter(item.title)}
+            onMouseLeave={() => handleMouseOut()}
           >
             <StyledIconWrapper href={item.link}>
-              {item.isMuiIcon ? (
-                <item.icon fontSize="large" />
-              ) : (
-                <item.icon size={40} />
+              {textShown !== item.title && (
+                <div>
+                  {' '}
+                  {item.isMuiIcon ? (
+                    <item.icon fontSize="large" />
+                  ) : (
+                    <item.icon size={40} />
+                  )}
+                </div>
               )}
-              {!scrolled && <StyledParagraph> {item.title}</StyledParagraph>}
+
+              {textShown === item.title && (
+                <StyledParagraph> {item.title}</StyledParagraph>
+              )}
             </StyledIconWrapper>
           </StyledLi>
         ))}

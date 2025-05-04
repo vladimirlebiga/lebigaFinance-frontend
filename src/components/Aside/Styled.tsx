@@ -1,7 +1,6 @@
 'use client';
 import { styled } from '@mui/material/styles';
 import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
-import Link from 'next/link';
 
 export const StyledAside = styled('aside')(() => ({
   position: 'relative',
@@ -17,7 +16,7 @@ export const StyledAside = styled('aside')(() => ({
 export const StyledNewImgOrange = styled('div')(() => ({
   position: 'absolute', // Use absolute positioning relative to StyledAside
   // backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744829456/slide_3_zmklbo.png)`,
-  bottom: '60%',
+  bottom: '63%',
   left: '20%',
   width: '400px',
   height: '400px',
@@ -41,7 +40,7 @@ export const StyledNewImg = styled('div')(() => ({
 export const StyledNewImgDoc = styled('div')(() => ({
   position: 'absolute', // Use absolute positioning relative to StyledAside
   backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526756/slide_5_wn9wii.png)`,
-  bottom: '39%',
+  bottom: '35%',
   left: '30%',
   width: '380px',
   height: '480px',
@@ -125,28 +124,44 @@ export const StyledLangWrapper = styled('div')(() => ({
   right: '-30%',
 }));
 
-export const StyledNed = styled(Link)(() => ({
+export const StyledNed = styled('button')(() => ({
   position: 'absolute',
   top: '-40px',
-  left: '-20px',
+  left: '-55px',
+  backgroundColor: 'transparent',
+  '&:hover': {
+    fontWeight: 'bold',
+  },
 }));
 
-export const StyledUkr = styled(Link)(() => ({
+export const StyledUkr = styled('button')(() => ({
   position: 'absolute',
   top: '-20px',
-  left: '0',
+  left: '-50px',
+  backgroundColor: 'transparent',
+  '&:hover': {
+    fontWeight: 'bold',
+  },
 }));
 
-export const StyledEng = styled(Link)(() => ({
+export const StyledEng = styled('button')(() => ({
   position: 'absolute',
   top: '0',
   left: '20px',
+  backgroundColor: 'transparent',
+  '&:hover': {
+    fontWeight: 'bold',
+  },
 }));
 
-export const StyledRus = styled(Link)(() => ({
+export const StyledRus = styled('button')(() => ({
   position: 'absolute',
   top: '20px',
   left: '40px',
+  backgroundColor: 'transparent',
+  '&:hover': {
+    fontWeight: 'bold',
+  },
 }));
 
 // import Brightness3OutlinedIcon from '@mui/icons-material/Brightness3Outlined';

@@ -4,22 +4,23 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { supportedLocales } from '@/utils/languageNegotiator';
-//import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
 import {
   StyledIcon,
   StyledLang,
   StyledLangButtonWrapper,
-  StyledLangOption,
   StyledLangWrapper,
-  StyledCurrentLang,
+  StyledEng,
+  StyledUkr,
+  StyledNed,
+  StyledRus,
 } from './Styled';
 
-const languageLabels: Record<string, string> = {
-  en: 'ENG',
-  nl: 'NED',
-  uk: 'УКР',
-  ru: 'РУС',
-};
+// const languageLabels: Record<string, string> = {
+//   en: 'ENG',
+//   nl: 'NED',
+//   uk: 'УКР',
+//   ru: 'РУС',
+// };
 
 export function LanguageSwitcher() {
   const router = useRouter();
@@ -94,19 +95,13 @@ export function LanguageSwitcher() {
     <StyledLangButtonWrapper ref={wrapperRef}>
       <StyledLang onClick={() => setIsOpen(!isOpen)}>
         <StyledIcon />
-        <StyledCurrentLang>{languageLabels[locale]}</StyledCurrentLang>
       </StyledLang>
       {isOpen && (
         <StyledLangWrapper>
-          {supportedLocales.map((lang) => (
-            <StyledLangOption
-              key={lang}
-              onClick={() => handleLanguageChange(lang)}
-              active={locale === lang}
-            >
-              {languageLabels[lang]}
-            </StyledLangOption>
-          ))}
+          <StyledNed onClick={() => handleLanguageChange('nl')}>NED</StyledNed>
+          <StyledUkr onClick={() => handleLanguageChange('uk')}>УКР</StyledUkr>
+          <StyledEng onClick={() => handleLanguageChange('en')}>ENG</StyledEng>
+          <StyledRus onClick={() => handleLanguageChange('ru')}>РУС</StyledRus>
         </StyledLangWrapper>
       )}
     </StyledLangButtonWrapper>

@@ -11,8 +11,8 @@ export const StyledText = styled('p')(() => ({
 }));
 
 export const StyledSection = styled('section')(() => ({
-  paddingTop: '60px',
-  paddingBottom: '250px',
+  paddingTop: '70px',
+  paddingBottom: '500px',
 }));
 
 export const StyledHeader = styled('h2')(() => ({

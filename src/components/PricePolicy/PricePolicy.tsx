@@ -12,9 +12,9 @@ export const PricePolicy = () => {
           commitment, just answers.
         </StyledParagraph>
         <StyledParagraph>
-          Standard rate - € 16 per hour (ex. BTW). Our services, including
+          Standard rate - €60 per hour (ex. BTW). Our services, including
           financial estimations, planning, and advisory support, are billed at
-          €16 per hour (excluding VAT).
+          €60 per hour (excluding VAT).
         </StyledParagraph>
         <StyledParagraph>
           Payment terms - 50/50 split. 50% - Based on a preliminary estimate

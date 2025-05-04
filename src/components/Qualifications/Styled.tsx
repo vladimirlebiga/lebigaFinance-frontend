@@ -10,7 +10,7 @@ export const StyledSpan = styled('span')(() => ({
 }));
 
 export const StyledSection = styled('section')(() => ({
-  paddingTop: '60px',
+  paddingTop: '70px',
   paddingBottom: '250px',
 }));
 
