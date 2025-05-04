@@ -6,9 +6,8 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  // eslint-disable-next-line @typescript-eslint/await-thenable
   const { locale } = await params;
 
   // Validate the locale
