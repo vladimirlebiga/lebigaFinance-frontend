@@ -3,6 +3,7 @@ import { supportedLocales } from '@/utils/languageNegotiator';
 import { HomePage } from '@/components/Pages/HomePage';
 
 export default async function Page(
+  // eslint-disable-next-line prettier/prettier
   { params }: { params: Promise<{ locale: string }> }
 ) {
   const { locale } = await params;
