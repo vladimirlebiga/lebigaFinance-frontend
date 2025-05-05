@@ -63,11 +63,9 @@ export const Nav = () => {
   const [textShown, setTextShown] = useState<string | null>(null);
   const handleMouseEnter = (title: string) => {
     setTextShown(title);
-    console.log('textShown', textShown);
   };
   const handleMouseOut = () => {
     setTextShown(null);
-    console.log('textShown', textShown);
   };
 
   return (

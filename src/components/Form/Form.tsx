@@ -36,9 +36,17 @@ export function MyForm() {
     resolver: yupResolver(schemaContact),
   });
 
+  // const onSubmit = async (data: FormValues) => {
+  //   try {
+  //     const res = await fetch('/api/contact', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify(data),
+  //     });
   const onSubmit = async (data: FormValues) => {
     try {
-      const res = await fetch('/api/contact', {
+      const url = `/api/contact`;
+      const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -110,3 +118,5 @@ export function MyForm() {
     </StyledSection>
   );
 }
+
+//${window.location.origin}
