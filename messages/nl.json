@@ -1,83 +1,91 @@
 {
-    "contact": {
-      "title": "Contact",
-      "email": "finance@lebiga.nl",
-      "phone": "+31 (0) 6 20 87 66 06"
-    },
-    "menu": [
-      { "title": "Over Ons" },
-      { "title": "Kwalificaties & Professionele Achtergrond" },
-      { "title": "Waarom Ons" },
-      { "title": "Aangeboden Diensten" },
-      { "title": "Prijsbeleid" }
+  "contact": {
+    "title": "Contact",
+    "email": "finance@lebiga.nl",
+    "phone": "+31 (0) 6 20 87 66 06"
+  },
+  "menu": [
+    { "title": "Over Ons" },
+    { "title": "Kwalificaties & Professionele Achtergrond" },
+    { "title": "Waarom Ons" },
+    { "title": "Aangeboden Diensten" },
+    { "title": "Prijsbeleid" }
+  ],
+  "aside": {
+    "title": "beschikbaar",
+    "subTitle": "LEBIGA FINANCE",
+    "contactUs": "neem contact met ons op"
+  },
+  "services": {
+    "services": [
+      {
+        "title": "Bedrijfsregistratie & oprichting (ZZP, BV, Holding, Stichting)"
+      },
+      { "title": "Belastingaangiften - particulier & zakelijk" },
+      { "title": "Boekhouding & administratie" },
+      { "title": "Financiële planning & belastingoptimalisatie" },
+      { "title": "Leningen & zakelijke kredietaanvragen" },
+      { "title": "Juridische & contractuele ondersteuning" }
     ],
-    "aside": {
-      "title": "beschikbaar",
-      "subTitle": "LEBIGA FINANCE",
-      "contactUs": "neem contact met ons op"
-    },
-    "services": {
-      "services": [
-        { "title": "Bedrijfsregistratie & oprichting (ZZP, BV, Holding, Stichting)" },
-        { "title": "Belastingaangiften - particulier & zakelijk" },
-        { "title": "Boekhouding & administratie" },
-        { "title": "Financiële planning & belastingoptimalisatie" },
-        { "title": "Leningen & zakelijke kredietaanvragen" },
-        { "title": "Juridische & contractuele ondersteuning" }
-      ],
-      "intro": "We spreken uw taal en regelen alles—zodat u zich nergens zorgen over hoeft te maken! Geniet van een eenvoudige, stressvrije financiële ervaring met experts die ervoor zorgen dat u elk mogelijk voordeel behaalt.",
-      "callToAction": "Bel ons vandaag nog voor een gratis consult en laat ons de rest regelen!"
-    },
-    "about": {
-      "title": "Over Ons",
-      "description": "Hallo, ik ben Vlada, uw expert voor financiële duidelijkheid en zorgeloos leven. Sinds mijn 18e is financiën niet alleen mijn beroep, maar ook mijn passie. Ik heb zowel een Bachelor- als een Masterdiploma in finance en accountancy, en ik heb mijn carrière gewijd aan het helpen van freelancers, kleine ondernemers en particulieren bij het overwinnen van financiële uitdagingen. Of het nu gaat om het navigeren door complexe belastingzaken of het helder krijgen van de cijfers van uw bedrijf, ik zorg ervoor dat uw financiën moeiteloos verlopen, zodat u zich kunt concentreren op datgene waar u goed in bent. Met jarenlange ervaring in sectoren zoals detailhandel, productie en technologie begrijp ik de unieke uitdagingen waarmee bedrijven en particulieren worden geconfronteerd. Mijn doel is eenvoudig: u te versterken met op maat gemaakte financiële oplossingen die stress verminderen en succes bevorderen."
-    },
-    "whyUs": {
-      "title": "Waarom Ons",
-      "points": [
-        {
-          "title": "Deskundige Expertise",
-          "description": "Met jarenlange ervaring en internationaal erkende kwalificaties bied ik oplossingen waarop u kunt vertrouwen."
-        },
-        {
-          "title": "Op Maat voor U",
-          "description": "Ik begrijp dat het voor elke klant anders is—daarom pas ik mijn diensten aan om aan uw specifieke doelen te voldoen."
-        },
-        {
-          "title": "Zorgeloze Financiën",
-          "description": "Laat de administratieve rompslomp aan mij over en richt u op de groei van uw bedrijf."
-        },
-        {
-          "title": "Geoptimaliseerde Belastingbesparingen",
-          "description": "Ik zorg voor volledige naleving van de Nederlandse belastingregels en bespaar u zoveel mogelijk."
-        },
-        {
-          "title": "Transparante Prijzen",
-          "description": "Geen verborgen kosten, alleen eerlijke en duidelijke tarieven voor hoogwaardige service."
-        }
-      ]
-    },
-    "qualifications": {
-      "title": "Kwalificaties & Professionele Achtergrond",
-      "items": [
-        "Bachelor- en Masterdiploma's in finance en accountancy van toonaangevende Europese instellingen.",
-        "Praktische ervaring bij toonaangevende internationale bedrijven in de detailhandel, productie en technologiesector: uitvoeren van financiële analyses, beheren van audits, opstellen van begrotingen en implementeren van geautomatiseerde oplossingen.",
-        "ACCA‑certificering die garandeert dat het werk voldoet aan de hoogste internationale boekhoudnormen.",
-        "Gespecialiseerde training: geavanceerde kennis van IFRS‑normen, belastingregelgeving, financiële analyse en strategische prognoses.",
-        "Praktische expertise: opstellen van financiële overzichten, winst- en verliesrekeningen, kasstroomanalyses; uitvoeren van audits; waarborgen van compliance over verschillende rechtsgebieden; implementeren van financiële automatiseringstools; leiden van budgetplanning en prognoses; adviseren over belastingbesparingen en financiële strategieën; trainen en aansturen van financiële teams."
-      ]
-    },
-    "pricePolicy": {
-      "title": "Prijsbeleid",
-      "firstConsultation": "Eerste 15 MIN. - GRATIS consult. Wij geloven in transparantie. Daarom is uw eerste consult van 15 minuten volledig gratis—geen verplichtingen, alleen antwoorden.",
-      "standardRate": "€16 per uur (excl. BTW). Onze diensten, inclusief financiële schattingen, planning en adviesondersteuning, worden gefactureerd tegen €16 per uur (excl. BTW).",
-      "paymentTerms": "50/50‐verdeling: 50% op basis van een voorlopige schatting vooraf; 50% na voltooiing—het resterende bedrag wordt betaald zodra al het werk is afgerond.",
-      "timeTracking": "Transparante tijdregistratie: elke week ontvangt u een gedetailleerd rapport met de bestede tijd aan uw project en resterende voorafbetaalde uren.",
-      "preliminaryEstimation": "Neem contact met ons op voor een voorlopige schatting op basis van €60 per uur of een vaste prijs, afhankelijk van de omvang van het project."
-    },
-    "contactForm": {
-      "title": "Contactformulier",
-      "sendButtonText": "Versturen"
-    }
+    "intro": "We spreken uw taal en regelen alles—zodat u zich nergens zorgen over hoeft te maken! Geniet van een eenvoudige, stressvrije financiële ervaring met experts die ervoor zorgen dat u elk mogelijk voordeel behaalt.",
+    "callToAction": "Bel ons vandaag nog voor een gratis consult en laat ons de rest regelen!"
+  },
+  "about": {
+    "title": "Over Ons",
+    "description": "Hallo, ik ben Vlada, uw expert voor financiële duidelijkheid en zorgeloos leven. Sinds mijn 18e is financiën niet alleen mijn beroep, maar ook mijn passie. Ik heb zowel een Bachelor- als een Masterdiploma in finance en accountancy, en ik heb mijn carrière gewijd aan het helpen van freelancers, kleine ondernemers en particulieren bij het overwinnen van financiële uitdagingen. Of het nu gaat om het navigeren door complexe belastingzaken of het helder krijgen van de cijfers van uw bedrijf, ik zorg ervoor dat uw financiën moeiteloos verlopen, zodat u zich kunt concentreren op datgene waar u goed in bent. Met jarenlange ervaring in sectoren zoals detailhandel, productie en technologie begrijp ik de unieke uitdagingen waarmee bedrijven en particulieren worden geconfronteerd. Mijn doel is eenvoudig: u te versterken met op maat gemaakte financiële oplossingen die stress verminderen en succes bevorderen."
+  },
+  "whyUs": {
+    "title": "Waarom Ons",
+    "points": [
+      {
+        "title": "Deskundige Expertise",
+        "description": "Met jarenlange ervaring en internationaal erkende kwalificaties bied ik oplossingen waarop u kunt vertrouwen."
+      },
+      {
+        "title": "Op Maat voor U",
+        "description": "Ik begrijp dat het voor elke klant anders is—daarom pas ik mijn diensten aan om aan uw specifieke doelen te voldoen."
+      },
+      {
+        "title": "Zorgeloze Financiën",
+        "description": "Laat de administratieve rompslomp aan mij over en richt u op de groei van uw bedrijf."
+      },
+      {
+        "title": "Geoptimaliseerde Belastingbesparingen",
+        "description": "Ik zorg voor volledige naleving van de Nederlandse belastingregels en bespaar u zoveel mogelijk."
+      },
+      {
+        "title": "Transparante Prijzen",
+        "description": "Geen verborgen kosten, alleen eerlijke en duidelijke tarieven voor hoogwaardige service."
+      }
+    ]
+  },
+  "qualifications": {
+    "title": "Kwalificaties & Professionele Achtergrond",
+    "items": [
+      "Bachelor- en Masterdiploma's in finance en accountancy van toonaangevende Europese instellingen.",
+      "Praktische ervaring bij toonaangevende internationale bedrijven in de detailhandel, productie en technologiesector: uitvoeren van financiële analyses, beheren van audits, opstellen van begrotingen en implementeren van geautomatiseerde oplossingen.",
+      "ACCA‑certificering die garandeert dat het werk voldoet aan de hoogste internationale boekhoudnormen.",
+      "Gespecialiseerde training: geavanceerde kennis van IFRS‑normen, belastingregelgeving, financiële analyse en strategische prognoses.",
+      "Praktische expertise: opstellen van financiële overzichten, winst- en verliesrekeningen, kasstroomanalyses; uitvoeren van audits; waarborgen van compliance over verschillende rechtsgebieden; implementeren van financiële automatiseringstools; leiden van budgetplanning en prognoses; adviseren over belastingbesparingen en financiële strategieën; trainen en aansturen van financiële teams."
+    ]
+  },
+  "pricePolicy": {
+    "title": "Prijsbeleid",
+    "firstConsultation": "Eerste 15 MIN. - GRATIS consult. Wij geloven in transparantie. Daarom is uw eerste consult van 15 minuten volledig gratis—geen verplichtingen, alleen antwoorden.",
+    "standardRate": "€16 per uur (excl. BTW). Onze diensten, inclusief financiële schattingen, planning en adviesondersteuning, worden gefactureerd tegen €16 per uur (excl. BTW).",
+    "paymentTerms": "50/50‐verdeling: 50% op basis van een voorlopige schatting vooraf; 50% na voltooiing—het resterende bedrag wordt betaald zodra al het werk is afgerond.",
+    "timeTracking": "Transparante tijdregistratie: elke week ontvangt u een gedetailleerd rapport met de bestede tijd aan uw project en resterende voorafbetaalde uren.",
+    "preliminaryEstimation": "Neem contact met ons op voor een voorlopige schatting op basis van €60 per uur of een vaste prijs, afhankelijk van de omvang van het project."
+  },
+  "contactForm": {
+    "title": "Contactformulier",
+    "companyRegistration": "Bedrijfsregistratie & oprichting (ZZP, BV, Holding, Stichting)",
+    "taxReturns": "Belastingaangiften - particulier & zakelijk",
+    "accountingBookkeeping": "Boekhouding & administratie",
+    "financialPlanning": "Financiële planning & belastingoptimalisatie",
+    "loansBusiness": "Leningen & zakelijke kredietaanvragen",
+    "legalContract": "Juridische & contractuele ondersteuning",
+    "other": "Anders",
+    "sendButtonText": "Versturen"
   }
-  
+}

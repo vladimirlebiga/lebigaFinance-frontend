@@ -77,6 +77,13 @@
   },
   "contactForm": {
     "title": "Contact Form",
+    "companyRegistration": "Company registration & setup (ZZP, BV, Holding, Stichting)",
+    "taxReturns": "Tax returns - personal & business",
+    "accountingBookkeeping": "Accounting & bookkeeping",
+    "financialPlanning": "Financial planning & tax optimization",
+    "loansBusiness": "Loans & business credit applications",
+    "legalContract": "Legal & contract support",
+    "other": "Other questions",
     "sendButtonText": "Send"
   }
 }

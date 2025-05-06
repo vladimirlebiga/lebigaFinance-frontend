@@ -11,13 +11,6 @@ import {
   StyledNewImg,
   StyledNewImgDoc,
   StyledNewImgOrange,
-  // StyledLang,
-  // StyledIcon,
-  // StyledNed,
-  // StyledUkr,
-  // StyledEng,
-  // StyledRus,
-  // StyledLangWrapper,
   StyledLangButtonWrapper,
 } from './Styled';
 import MailSharpIcon from '@mui/icons-material/MailSharp';

@@ -10,6 +10,7 @@ import {
   StyledParagraph,
   NavContainer,
 } from './Styled';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface NavItem {
   title: string;
@@ -36,7 +37,6 @@ const navMenu: NavItem[] = [
   },
   {
     title: 'Why Us',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     icon: PiHandHeartFill,
     link: '#why-us',
     isMuiIcon: false,
@@ -51,7 +51,6 @@ const navMenu: NavItem[] = [
   },
   {
     title: 'Price Policy',
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     icon: PiCoinsBold,
     link: '#price-policy',
     isMuiIcon: false,
@@ -61,6 +60,8 @@ const navMenu: NavItem[] = [
 
 export const Nav = () => {
   const [textShown, setTextShown] = useState<string | null>(null);
+  const { t } = useTranslation();
+
   const handleMouseEnter = (title: string) => {
     setTextShown(title);
   };
@@ -68,10 +69,14 @@ export const Nav = () => {
     setTextShown(null);
   };
 
+  const getMenuTranslation = (index: number) => {
+    return t(`menu.${index}.title`);
+  };
+
   return (
     <NavContainer>
       <StyledUl>
-        {navMenu.map((item) => (
+        {navMenu.map((item, index) => (
           <StyledLi
             key={item.title}
             smallArea={item.scrolledClass}
@@ -81,7 +86,6 @@ export const Nav = () => {
             <StyledIconWrapper href={item.link}>
               {textShown !== item.title && (
                 <div>
-                  {' '}
                   {item.isMuiIcon ? (
                     <item.icon fontSize="large" />
                   ) : (
@@ -91,7 +95,7 @@ export const Nav = () => {
               )}
 
               {textShown === item.title && (
-                <StyledParagraph> {item.title}</StyledParagraph>
+                <StyledParagraph>{getMenuTranslation(index)}</StyledParagraph>
               )}
             </StyledIconWrapper>
           </StyledLi>
