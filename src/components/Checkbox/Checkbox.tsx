@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useId } from 'react';
 import { Checkbox, FormControlLabel, FormHelperText } from '@mui/material';
 import { Controller, useFormContext } from 'react-hook-form';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface CheckboxInputProps {
   id: string;
@@ -12,38 +13,38 @@ interface CheckboxInputConfig {
   label: string;
 }
 
-const config: Record<string, CheckboxInputConfig> = {
-  companyRegistration: {
-    name: 'companyRegistration',
-    label: 'Company registration & setup (ZZP, BV, Holding, Stichting)',
-  },
-  accountingBookkeeping: {
-    name: 'accountingBookkeeping',
-    label: 'Tax returns - personal & business',
-  },
-  taxReturns: {
-    name: 'taxReturns',
-    label: 'Accounting & bookkeeping',
-  },
-  financialPlanning: {
-    name: 'financialPlanning',
-    label: 'Financial planning & tax optimization',
-  },
-  loansBusiness: {
-    name: 'loansBusiness',
-    label: 'Loans & business credit applications',
-  },
-  legalContract: {
-    name: 'legalContract',
-    label: 'Legal & contract support',
-  },
-  other: {
-    name: 'other',
-    label: 'Other questions',
-  },
-};
-
 const CheckboxInput = ({ id }: CheckboxInputProps) => {
+  const { t } = useTranslation();
+  const config: Record<string, CheckboxInputConfig> = {
+    companyRegistration: {
+      name: 'companyRegistration',
+      label: t('contactForm.companyRegistration'),
+    },
+    accountingBookkeeping: {
+      name: 'accountingBookkeeping',
+      label: t('contactForm.taxReturns'),
+    },
+    taxReturns: {
+      name: 'taxReturns',
+      label: t('contactForm.accountingBookkeeping'),
+    },
+    financialPlanning: {
+      name: 'financialPlanning',
+      label: t('contactForm.financialPlanning'),
+    },
+    loansBusiness: {
+      name: 'loansBusiness',
+      label: t('contactForm.loansBusiness'),
+    },
+    legalContract: {
+      name: 'legalContract',
+      label: t('contactForm.legalContract'),
+    },
+    other: {
+      name: 'other',
+      label: t('contactForm.other'),
+    },
+  };
   // 1. Always call your Hooks in the same order, unconditionally
   const [mounted, setMounted] = useState(false);
   const { name, label } = config[id];

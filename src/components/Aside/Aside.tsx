@@ -54,26 +54,7 @@ export const Aside: React.FC = () => {
         </StyledIconWrapper>
         {/* Language selector with click-outside detection */}
         <StyledLangButtonWrapper>
-          {/* <StyledLang ref={langRef} onClick={() => setShown((prev) => !prev)}>
-            <StyledIcon />
-          </StyledLang> */}
           <LanguageSwitcher />
-          {/* {shown && (
-            <StyledLangWrapper>
-              <StyledNed href="/nl" locale="nl">
-                NED
-              </StyledNed>
-              <StyledUkr href="/uk" locale="uk">
-                УКР
-              </StyledUkr>
-              <StyledEng href="/en" locale="en">
-                ENG
-              </StyledEng>
-              <StyledRus href="/ru" locale="ru">
-                РУС
-              </StyledRus>
-            </StyledLangWrapper>
-          )} */}
         </StyledLangButtonWrapper>
         <Footer />
       </StyledSticky>

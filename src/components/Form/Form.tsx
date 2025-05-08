@@ -14,11 +14,13 @@ import {
   StyledSection,
   StyledHeader,
 } from './Styled';
+import { useTranslation } from '@/hooks/useTranslation';
 
 // Infer your form type directly from the schema:
 type FormValues = InferType<typeof schemaContact>;
 
 export function MyForm() {
+  const { t } = useTranslation();
   const formProps = useForm({
     defaultValues: {
       name: '',
@@ -45,6 +47,7 @@ export function MyForm() {
   //     });
   const onSubmit = async (data: FormValues) => {
     try {
+      console.log(data);
       const url = `/api/contact`;
       const res = await fetch(url, {
         method: 'POST',
@@ -67,7 +70,7 @@ export function MyForm() {
   return (
     <StyledSection id="contact">
       <StyledFormWrapper>
-        <StyledHeader>Contact Form</StyledHeader>
+        <StyledHeader>{t('contactForm.title')}</StyledHeader>
         <FormProvider {...formProps}>
           <StyledForm
             onSubmit={(e) => {

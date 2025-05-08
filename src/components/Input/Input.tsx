@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useId } from 'react';
 import { Controller, useFormContext } from 'react-hook-form';
 import { StyledTextField } from './Styled';
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface InputConfig {
   name: string;
@@ -10,26 +11,27 @@ interface InputConfig {
   placeholder: string;
 }
 
-const config: Record<string, InputConfig> = {
-  name: {
-    name: 'name',
-    label: 'Name',
-    type: 'text',
-    placeholder: 'Enter your name',
-  },
-  email: {
-    name: 'email',
-    label: 'Email',
-    type: 'email',
-    placeholder: 'Enter your email',
-  },
-};
-
 interface InputProps {
   id: string;
 }
 
 export const InputComponent = ({ id }: InputProps) => {
+  const { t } = useTranslation();
+  const config: Record<string, InputConfig> = {
+    name: {
+      name: 'name',
+      label: t('contactForm.name'),
+      type: 'text',
+      placeholder: t('contactForm.namePlaceholder'),
+    },
+    email: {
+      name: 'email',
+      label: t('contactForm.email'),
+      type: 'email',
+      placeholder: t('contactForm.emailPlaceholder'),
+    },
+  };
+
   // 1. Always call your Hooks unconditionally at the top
   const [mounted, setMounted] = useState(false);
   const reactId = useId();
