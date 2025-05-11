@@ -17,48 +17,37 @@
     "contactUs": "neem contact met ons op"
   },
   "services": {
-    "services": [
-      {
-        "title": "Bedrijfsregistratie & oprichting (ZZP, BV, Holding, Stichting)"
-      },
-      { "title": "Belastingaangiften - particulier & zakelijk" },
-      { "title": "Boekhouding & administratie" },
-      { "title": "Financiële planning & belastingoptimalisatie" },
-      { "title": "Leningen & zakelijke kredietaanvragen" },
-      { "title": "Juridische & contractuele ondersteuning" }
-    ],
+    "services": "nl", 
     "intro": "We spreken uw taal en regelen alles—zodat u zich nergens zorgen over hoeft te maken! Geniet van een eenvoudige, stressvrije financiële ervaring met experts die ervoor zorgen dat u elk mogelijk voordeel behaalt.",
     "callToAction": "Bel ons vandaag nog voor een gratis consult en laat ons de rest regelen!"
   },
   "about": {
     "title": "Over Ons",
-    "description": "Hallo, ik ben Vlada, uw expert voor financiële duidelijkheid en zorgeloos leven. Sinds mijn 18e is financiën niet alleen mijn beroep, maar ook mijn passie. Ik heb zowel een Bachelor- als een Masterdiploma in finance en accountancy, en ik heb mijn carrière gewijd aan het helpen van freelancers, kleine ondernemers en particulieren bij het overwinnen van financiële uitdagingen. Of het nu gaat om het navigeren door complexe belastingzaken of het helder krijgen van de cijfers van uw bedrijf, ik zorg ervoor dat uw financiën moeiteloos verlopen, zodat u zich kunt concentreren op datgene waar u goed in bent. Met jarenlange ervaring in sectoren zoals detailhandel, productie en technologie begrijp ik de unieke uitdagingen waarmee bedrijven en particulieren worden geconfronteerd. Mijn doel is eenvoudig: u te versterken met op maat gemaakte financiële oplossingen die stress verminderen en succes bevorderen."
+    "descriptionOne": "Hallo, ik ben Vlada, uw expert voor financiële duidelijkheid en zorgeloos leven. Sinds mijn 18e is financiën niet alleen mijn beroep, maar ook mijn passie.",
+    "descriptionTwo": "Ik heb zowel een Bachelor- als een Masterdiploma in finance en accountancy, en ik heb mijn carrière gewijd aan het helpen van freelancers, kleine ondernemers en particulieren bij het overwinnen van financiële uitdagingen.",
+    "descriptionThree": "Of het nu gaat om het navigeren door complexe belastingzaken of het helder krijgen van de cijfers van uw bedrijf, ik zorg ervoor dat uw financiën moeiteloos verlopen, zodat u zich kunt concentreren op datgene waar u goed in bent.",
+    "descriptionFour": "Met jarenlange ervaring in sectoren zoals detailhandel, productie en technologie begrijp ik de unieke uitdagingen waarmee bedrijven en particulieren worden geconfronteerd. Mijn doel is eenvoudig: u te versterken met op maat gemaakte financiële oplossingen die stress verminderen en succes bevorderen."
   },
   "whyUs": {
     "title": "Waarom Ons",
-    "points": [
-      {
-        "title": "Deskundige Expertise",
-        "description": "Met jarenlange ervaring en internationaal erkende kwalificaties bied ik oplossingen waarop u kunt vertrouwen."
-      },
-      {
-        "title": "Op Maat voor U",
-        "description": "Ik begrijp dat het voor elke klant anders is—daarom pas ik mijn diensten aan om aan uw specifieke doelen te voldoen."
-      },
-      {
-        "title": "Zorgeloze Financiën",
-        "description": "Laat de administratieve rompslomp aan mij over en richt u op de groei van uw bedrijf."
-      },
-      {
-        "title": "Geoptimaliseerde Belastingbesparingen",
-        "description": "Ik zorg voor volledige naleving van de Nederlandse belastingregels en bespaar u zoveel mogelijk."
-      },
-      {
-        "title": "Transparante Prijzen",
-        "description": "Geen verborgen kosten, alleen eerlijke en duidelijke tarieven voor hoogwaardige service."
-      }
-    ]
+    "text": "Als het gaat om het beheren van uw financiën, verdient u niets minder dan betrouwbare excellentie. Dit is waarom ik de ideale partner ben voor uw financiële behoeften:",
+    
+    "titleOne": "Deskundige Expertise",
+    "descriptionOne": "Met jarenlange ervaring en internationaal erkende kwalificaties bied ik oplossingen waarop u kunt vertrouwen.",
+      
+    "titleTwo": "Op Maat voor U",
+    "descriptionTwo": "Ik begrijp dat het voor elke klant anders is—daarom pas ik mijn diensten aan om aan uw specifieke doelen te voldoen.",
+      
+    "titleThree": "Zorgeloze Financiën",
+    "descriptionThree": "Laat de administratieve rompslomp aan mij over en richt u op de groei van uw bedrijf.",
+    
+    "titleFour": "Geoptimaliseerde Belastingbesparingen",
+    "descriptionFour": "Ik zorg voor volledige naleving van de Nederlandse belastingregels en bespaar u zoveel mogelijk.",
+      
+    "titleFive": "Transparante Prijzen",
+    "descriptionFive": "Geen verborgen kosten, alleen eerlijke en duidelijke tarieven voor hoogwaardige service."
   },
+  
   "qualifications": {
     "title": "Kwalificaties & Professionele Achtergrond",
     "items": [

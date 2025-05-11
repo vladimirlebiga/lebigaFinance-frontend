@@ -1,30 +1,54 @@
 import React from 'react';
 import { StyledParagraph, StyledServices, StyledSection } from './Styled';
+import { useTranslation } from '@/hooks/useTranslation';
 
-const servicesConfig: string[] = [
-  'Company registration & setup (ZZP, BV, Holding, Stichting)',
-  'Tax returns - personal & business',
-  'Accounting & bookkeeping',
-  'Financial planning & tax optimization',
-  'Loans & business credit applications',
-  'Legal & contract support',
-];
+const servicesConfig: Record<string, string[]> = {
+  en: [
+    'Company registration & setup (ZZP, BV, Holding, Stichting)',
+    'Tax returns - personal & business',
+    'Accounting & bookkeeping',
+    'Financial planning & tax optimization',
+    'Loans & business credit applications',
+    'Legal & contract support',
+  ],
+  nl: [
+    'Bedrijfsopzet (ZZP, BV, Holding, Stichting)',
+    'Belastingaangifte - persoonlijk & zakelijk',
+    'Boekhouding & boekhouden',
+    'Financieel plan & belastingoptimalisatie',
+    'Leningen & zakelijke kredietaanvragen',
+    'Juridische & contractondersteuning',
+  ],
+  uk: [
+    'Реєстрація та налаштування компанії (ZZP, BV, Holding, Stichting)',
+    'Податкова декларація - особиста та бізнес',
+    'Бухгалтерський облік та облік',
+    'Фінансове планування та оптимізація податків',
+    'Кредити та кредитні заявки для бізнесу',
+    'Юридична та договірна підтримка',
+  ],
+  ru: [
+    'Регистрация и настройка компании (ZZP, BV, Holding, Stichting)',
+    'Налоговая декларация - персональная и бизнес',
+    'Бухгалтерский учет и учет',
+    'Финансовое планирование и оптимизация налогов',
+    'Кредиты и кредитные заявки для бизнеса',
+    'Юридическая и договорная поддержка',
+  ],
+};
 export const Services = () => {
+  const { t } = useTranslation();
+  const services = t('services.services');
+  const serviceConfig = servicesConfig[services];
   return (
     <StyledSection id="home">
       <ul>
-        {servicesConfig.map((service) => (
+        {serviceConfig?.map((service) => (
           <StyledServices key={service}>{service}</StyledServices>
         ))}
       </ul>
-      <StyledParagraph>
-        We speak your language and take care of everything—so you don't have to!
-        Enjoy a simple, stress-free financial experience with experts who ensure
-        you get every possible benefit.
-      </StyledParagraph>
-      <StyledParagraph>
-        Call us today for a free consultation and let us handle the rest!
-      </StyledParagraph>
+      <StyledParagraph>{t('services.intro')}</StyledParagraph>
+      <StyledParagraph>{t('services.callToAction')}</StyledParagraph>
     </StyledSection>
   );
 };

@@ -17,46 +17,37 @@
     "contactUs": "contact us"
   },
   "services": {
-    "services": [
-      { "title": "Company registration & setup (ZZP, BV, Holding, Stichting)" },
-      { "title": "Tax returns - personal & business" },
-      { "title": "Accounting & Bookkeeping" },
-      { "title": "Financial planning & tax optimization" },
-      { "title": "Loans & business credit applications" },
-      { "title": "Legal & contract support" }
-    ],
+    "services": "en",
     "intro": "We speak your language and take care of everything—so you don't have to! Enjoy a simple, stress-free financial experience with experts who ensure you get every possible benefit.",
     "callToAction": "Call us today for a free consultation and let us handle the rest!"
   },
   "about": {
     "title": "About Us",
-    "description": "Hi, I'm Vlada, your go-to expert for financial clarity and stress-free living. Since the age of 18, finance has not just been my profession but my passion. I hold both a Bachelor's and a Master's degree in finance and accounting, and I've spent my career helping freelancers, small business owners, and individuals overcome the hurdles of financial management. Whether it's navigating tax complexities or making sense of your company's numbers, I'm here to make finances effortless, so you can focus on what you do best. With years of experience across industries like retail, manufacturing, and tech, I understand the unique challenges businesses and individuals face. My goal is simple—to empower you with tailored financial solutions that reduce stress and drive success."
+    "descriptionOne": "Hi, I'm Vlada, your go-to expert for financial clarity and stress-free living. Since the age of 18, finance has not just been my profession but my passion.",
+    "descriptionTwo": "I hold both a Bachelor's and a Master's degree in finance and accounting, and I've spent my career helping freelancers, small business owners, and individuals overcome the hurdles of financial management.",
+    "descriptionThree": "Whether it's navigating tax complexities or making sense of your company's numbers, I'm here to make finances effortless, so you can focus on what you do best.",
+    "descriptionFour": "With years of experience across industries like retail, manufacturing, and tech, I understand the unique challenges businesses and individuals face. My goal is simple—to empower you with tailored financial solutions that reduce stress and drive success."
   },
   "whyUs": {
     "title": "Why Us",
-    "points": [
-      {
-        "title": "Expertise You Can Count On",
-        "description": "With years of experience and internationally recognized credentials, I offer solutions you can trust."
-      },
-      {
-        "title": "Tailored to You",
-        "description": "I understand every client's story is unique—that's why I customize my services to meet your specific goals."
-      },
-      {
-        "title": "Stress-Free Finances",
-        "description": "Leave the paperwork to me and focus on growing your business."
-      },
-      {
-        "title": "Maximized Tax Savings",
-        "description": "I ensure full compliance with Dutch tax regulations while saving you as much as possible."
-      },
-      {
-        "title": "Transparent Pricing",
-        "description": "No hidden fees, just simple and fair pricing for premium service."
-      }
-    ]
+    "text": "When it comes to managing your finances, you deserve nothing less than reliable excellence. Here's why I'm the ideal partner for your financial needs:",
+
+    "titleOne": "Expertise You Can Count On",
+    "descriptionOne": "With years of experience and internationally recognized credentials, I offer solutions you can trust.",
+
+    "titleTwo": "Tailored to You",
+    "descriptionTwo": "I understand every client's story is unique—that's why I customize my services to meet your specific goals.",
+
+    "titleThree": "Stress-Free Finances",
+    "descriptionThree": "Leave the paperwork to me and focus on growing your business.",
+
+    "titleFour": "Maximized Tax Savings",
+    "descriptionFour": "I ensure full compliance with Dutch tax regulations while saving you as much as possible.",
+
+    "titleFive": "Transparent Pricing",
+    "descriptionFive": "No hidden fees, just simple and fair pricing for premium service."
   },
+  
   "qualifications": {
     "title": "Qualifications & Professional Background",
     "items": [
@@ -95,4 +86,3 @@
     "sendButtonText": "Send"
   }
 }
-
