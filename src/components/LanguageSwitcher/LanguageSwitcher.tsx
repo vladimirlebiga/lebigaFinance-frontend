@@ -25,7 +25,7 @@ import {
 export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
-  const { locale, setLocale } = useLanguage();
+  const { setLocale } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -40,17 +40,10 @@ export function LanguageSwitcher() {
     if (mounted) {
       const savedLocale = localStorage.getItem('language');
       if (savedLocale && supportedLocales.includes(savedLocale as any)) {
-        setLocale(savedLocale as any);
+        handleLanguageChange(savedLocale);
       }
     }
-  }, [mounted, setLocale]);
-
-  // Save language preference when it changes
-  useEffect(() => {
-    if (mounted) {
-      localStorage.setItem('language', locale);
-    }
-  }, [locale, mounted]);
+  }, [mounted]);
 
   useEffect(() => {
     if (!mounted) return;
@@ -71,6 +64,7 @@ export function LanguageSwitcher() {
   const handleLanguageChange = (newLocale: string) => {
     setLocale(newLocale as any);
     setIsOpen(false);
+    localStorage.setItem('language', newLocale);
 
     // Update the URL with the new locale
     const segments = pathname.split('/');

@@ -77,4 +77,54 @@ box-shadow: 0 0 0px 1000px #FEDCC7 inset !important;
 
 } */
 
+/* Mobile (up to 767px) */
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    max-width: 100vw;
+    font-size: 14px; /* scale text down */
+  }
+
+  body {
+    background-position: top center;
+    background-size: cover;
+  }
+
+  /* utility for full-width images/videos */
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* example container padding */
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    max-width: 100vw;
+    font-size: 16px; /* slightly larger */
+  }
+
+  body {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 

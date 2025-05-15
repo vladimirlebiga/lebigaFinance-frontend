@@ -4,65 +4,73 @@ import {
   StyledParagraph,
   StyledSpan,
   StyledSection,
+  StyledItems,
 } from './Styled';
+import { useTranslation } from '@/hooks/useTranslation';
+
+const itemsConfig: Record<string, string[]> = {
+  en: [
+    'Crafting accurate financial statements, profit & loss reports, and cash flow analyses.',
+    'Conducting audits and ensuring cross-jurisdictional compliance.',
+    'Implementing cutting-edge financial automation tools for efficiency.',
+    'Spearheading budget planning and forecasting for multinational organizations.',
+    'Advising companies on tax savings and financial strategies to maximize growth.',
+    'Training and leading teams of finance professionals to achieve excellence.',
+  ],
+  uk: [
+    'Створюю точні фінансові звіти, звіти про прибуток і збитки та аналіз грошових потоків.',
+    'Проводив аудити та забезпечув міждержавну відповідність.',
+    'Впроваджую сучасні автоматизовані фінансові інструменти для ефективності.',
+    'Створюю бюджети та прогнози для міжнародних організацій.',
+    'Надаю консультації щодо податкових знижень та фінансових стратегій для максимального зростання.',
+    'Навчаю та керувати командами фінансових професіоналів для досягнення найвищих стандартів.',
+  ],
+  nl: [
+    'Accurate financiële verklaringen, winst- en verliesrekeningen en cashflowanalyse.',
+    'Audit uitvoeren en cross-jurisdictiональne compliance garanderen.',
+    'Implementeren van cutting-edge financiële automatiseringstools voor efficiëntie.',
+    'Budgetplanning en forecasting voor multinational organisaties.',
+    'Advies geven over belastingbesparingen en financiële strategieën voor maximale groei.',
+    'Trainen en leiden van teams financiële professionals voor prestatie.',
+  ],
+  ru: [
+    'Создание точных финансовых отчетов, отчетов о прибылях и убытках и анализа денежных потоков.',
+    'Проведение аудитов и обеспечение межгосударственной соответствия.',
+    'Внедрение современных автоматизированных финансовых инструментов для эффективности.',
+    'Планирование бюджетов и прогнозирование для международных организаций.',
+    'Предоставление консультаций по налоговым льготам и финансовым стратегиям для максимального роста.',
+    'Обучение и руководство командами финансовых профессионалов для достижения высоких стандартов.',
+  ],
+};
 
 export const Qualifications = () => {
+  const { t } = useTranslation();
+  const items = t('qualifications.items');
+  const itemConfig = itemsConfig[items];
   return (
     <StyledSection id="qualifications">
       <article>
-        <StyledHeader>Qualifications & Professional Background</StyledHeader>
+        <StyledHeader>{t('qualifications.title')}</StyledHeader>
+        <StyledParagraph>{t('qualifications.descriptionOne')}</StyledParagraph>
+        <StyledParagraph>{t('qualifications.descriptionTwo')}</StyledParagraph>
         <StyledParagraph>
-          I built my expertise on a strong foundation of academic and
-          professional qualifications.
+          <StyledSpan>{t('qualifications.spanOne')}</StyledSpan>{' '}
+          {t('qualifications.descriptionThree')}
         </StyledParagraph>
         <StyledParagraph>
-          Degrees: Bachelor's and Master's degrees in finance and accounting
-          from top European institutions.
+          <StyledSpan>{t('qualifications.spanTwo')}</StyledSpan>{' '}
+          {t('qualifications.descriptionFour')}
         </StyledParagraph>
         <StyledParagraph>
-          <StyledSpan>Practical Experience:</StyledSpan> By working with leading
-          international companies in the retail, manufacturing, and technology
-          sectors, I have gained extensive expertise in financial management. I
-          have conducted financial analyses, managed audits, prepared budgets,
-          and implemented automated solutions, giving me in-depth insight into
-          complex financial processes.
+          <StyledSpan>{t('qualifications.spanThree')}</StyledSpan>{' '}
+          {t('qualifications.descriptionFive')}
         </StyledParagraph>
-        <StyledParagraph>
-          <StyledSpan>ACCA Certification:</StyledSpan> My ACCA qualification
-          ensures that my work meets the highest international accounting
-          standards.
-        </StyledParagraph>
-        <StyledParagraph>
-          <StyledSpan>Specialized Training:</StyledSpan> Advanced knowledge of
-          IFRS standards, tax regulations, financial analysis, and strategic
-          forecasting.
-        </StyledParagraph>
-        <StyledParagraph>
-          Over the years, I've worked in several financial roles that have
-          equipped me with hands-on expertise. My experience includes:
-        </StyledParagraph>
-        <StyledParagraph>
-          Crafting accurate financial statements, profit & loss reports, and
-          cash flow analyses.
-        </StyledParagraph>
-        <StyledParagraph>
-          Conducting audits and ensuring cross-jurisdictional compliance.
-        </StyledParagraph>
-        <StyledParagraph>
-          Implementing cutting-edge financial automation tools for efficiency.
-        </StyledParagraph>
-        <StyledParagraph>
-          Spearheading budget planning and forecasting for multinational
-          organizations.
-        </StyledParagraph>
-        <StyledParagraph>
-          Advising companies on tax savings and financial strategies to maximize
-          growth.
-        </StyledParagraph>
-        <StyledParagraph>
-          Training and leading teams of finance professionals to achieve
-          excellence.
-        </StyledParagraph>
+        <StyledParagraph>{t('qualifications.descriptionSix')}</StyledParagraph>
+        <ul>
+          {itemConfig?.map((item) => (
+            <StyledItems key={item}>{item}</StyledItems>
+          ))}
+        </ul>
       </article>
     </StyledSection>
   );

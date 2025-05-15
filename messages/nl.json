@@ -50,13 +50,17 @@
   
   "qualifications": {
     "title": "Kwalificaties & Professionele Achtergrond",
-    "items": [
-      "Bachelor- en Masterdiploma's in finance en accountancy van toonaangevende Europese instellingen.",
-      "Praktische ervaring bij toonaangevende internationale bedrijven in de detailhandel, productie en technologiesector: uitvoeren van financiële analyses, beheren van audits, opstellen van begrotingen en implementeren van geautomatiseerde oplossingen.",
-      "ACCA‑certificering die garandeert dat het werk voldoet aan de hoogste internationale boekhoudnormen.",
-      "Gespecialiseerde training: geavanceerde kennis van IFRS‑normen, belastingregelgeving, financiële analyse en strategische prognoses.",
-      "Praktische expertise: opstellen van financiële overzichten, winst- en verliesrekeningen, kasstroomanalyses; uitvoeren van audits; waarborgen van compliance over verschillende rechtsgebieden; implementeren van financiële automatiseringstools; leiden van budgetplanning en prognoses; adviseren over belastingbesparingen en financiële strategieën; trainen en aansturen van financiële teams."
-    ]
+    "descriptionOne": "Ik heb mijn expertise op een sterk academisch en professioneel ondergrond gebouwd.",
+    "spanOne": "Diploma's:",
+    "descriptionTwo": "Bachelor- en Masterdiploma's in finance en accountancy van toonaangevende Europese instellingen.",
+    "spanTwo": "Praktische ervaring:",
+    "descriptionThree": "Door te werken met leidende internationale bedrijven in de detailhandel, productie en technologie sector, heb ik uitgebreide expertise in financiële beheer verkregen. Ik heb financiële analyses uitgevoerd, audits beheerd, begrotingen opgesteld en geautomatiseerde oplossingen geïmplementeerd, waardoor ik een diepgaande inzicht heb in complexe financiële processen.",
+    "spanThree": "ACCA‑certificering:",
+    "descriptionFour": "Mijn ACCA‑certificering garandeert dat mijn werk voldoet aan de hoogste internationale boekhoudnormen.",
+    "spanFour": "Gespecialiseerde training:",
+    "descriptionFive": "Geavanceerde kennis van IFRS‑normen, belastingregelgeving, financiële analyse en strategische prognoses.",
+    "descriptionSix": "In de loop van de jaren heb ik in verschillende financiële functies gewerkt die mij uitgebreide praktische expertise hebben verschaft. Mijn ervaring omvat:",
+    "items": "nl"
   },
   "pricePolicy": {
     "title": "Prijsbeleid",

@@ -50,14 +50,19 @@
   
   "qualifications": {
     "title": "Qualifications & Professional Background",
-    "items": [
-      "Bachelor's and Master's degrees in finance and accounting from top European institutions.",
-      "Practical experience with leading international companies in retail, manufacturing, and technology sectors: conducted financial analyses, managed audits, prepared budgets, and implemented automated solutions.",
-      "ACCA Certification ensuring work meets the highest international accounting standards.",
-      "Specialized training: advanced knowledge of IFRS standards, tax regulations, financial analysis, and strategic forecasting.",
-      "Hands-on expertise: crafting financial statements, profit & loss reports, cash flow analyses; conducting audits; ensuring cross-jurisdictional compliance; implementing financial automation tools; spearheading budget planning and forecasting; advising on tax savings and financial strategies; training and leading finance teams."
-    ]
+    "descriptionOne": "I built my expertise on a strong foundation of academic and professional qualifications.",
+    "spanOne": "Degrees:",
+    "descriptionTwo": "Bachelor's and Master's degrees in finance and accounting from top European institutions.",
+    "spanTwo": "Practical Experience:",
+    "descriptionThree": "By working with leading international companies in the retail, manufacturing, and technology sectors, I have gained extensive expertise in financial management. I have conducted financial analyses, managed audits, prepared budgets, and implemented automated solutions, giving me in-depth insight into complex financial processes.",
+    "spanThree": "ACCA Certification:",
+    "descriptionFour": "My ACCA qualification ensures that my work meets the highest international accounting standards.",
+    "spanFour": "Specialized Training:",
+    "descriptionFive": "Advanced knowledge of IFRS standards, tax regulations, financial analysis, and strategic forecasting.",
+    "descriptionSix": "Over the years, I've worked in several financial roles that have equipped me with hands-on expertise. My experience includes:",
+    "items": "en"
   },
+
   "pricePolicy": {
     "title": "Price Policy",
     "firstConsultation": "First 15 MIN. - FREE consultation. We believe in transparency. That's why your first 15-minute consultation is completely free—no commitment, just answers.",
