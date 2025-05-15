@@ -5,38 +5,26 @@ import {
   StyledHeader,
   StyledSection,
 } from './Styled';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export const OfferedServices = () => {
+  const { t } = useTranslation();
   return (
     <StyledSection id="services">
       <article>
-        <StyledHeader>Offered Services</StyledHeader>
-        <StyledText> Company Registration & Setup:</StyledText>
-        <StyledParagraph>
-          Get your business (ZZP, BV, Holding) up and running smoothly with
-          expert guidance.
-        </StyledParagraph>
-        <StyledText>Tax Returns & Optimization:</StyledText>
-        <StyledParagraph>
-          Personal and business taxes done right, with maximum deductions!
-        </StyledParagraph>
-        <StyledText>Accounting & Bookkeeping:</StyledText>
-        <StyledParagraph>
-          Flawless financial records, invoicing, and reporting.
-        </StyledParagraph>
-        <StyledText>Financial Planning & Advisory:</StyledText>
-        <StyledParagraph>
-          Gain control of your finances with budgeting, forecasting, and
-          strategic advice.
-        </StyledParagraph>
-        <StyledText>Business Credit & Loans:</StyledText>
-        <StyledParagraph>
-          Secure funding with polished loan applications and credit strategies.
-        </StyledParagraph>
-        <StyledText>Legal & Contract Support:</StyledText>
-        <StyledParagraph>
-          Navigate contracts and financial agreements with confidence.
-        </StyledParagraph>
+        <StyledHeader>{t('offeredServices.title')}</StyledHeader>
+        <StyledText>{t('offeredServices.textOne')}</StyledText>
+        <StyledParagraph>{t('offeredServices.paragraphOne')}</StyledParagraph>
+        <StyledText>{t('offeredServices.textTwo')}</StyledText>
+        <StyledParagraph>{t('offeredServices.paragraphTwo')}</StyledParagraph>
+        <StyledText>{t('offeredServices.textThree')}</StyledText>
+        <StyledParagraph>{t('offeredServices.paragraphThree')}</StyledParagraph>
+        <StyledText>{t('offeredServices.textFour')}</StyledText>
+        <StyledParagraph>{t('offeredServices.paragraphFour')}</StyledParagraph>
+        <StyledText>{t('offeredServices.textFive')}</StyledText>
+        <StyledParagraph>{t('offeredServices.paragraphFive')}</StyledParagraph>
+        <StyledText>{t('offeredServices.textSix')}</StyledText>
+        <StyledParagraph>{t('offeredServices.paragraphSix')}</StyledParagraph>
       </article>
     </StyledSection>
   );

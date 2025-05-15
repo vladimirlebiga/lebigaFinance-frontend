@@ -47,7 +47,6 @@
     "titleFive": "Transparent Pricing",
     "descriptionFive": "No hidden fees, just simple and fair pricing for premium service."
   },
-  
   "qualifications": {
     "title": "Qualifications & Professional Background",
     "descriptionOne": "I built my expertise on a strong foundation of academic and professional qualifications.",
@@ -62,14 +61,30 @@
     "descriptionSix": "Over the years, I've worked in several financial roles that have equipped me with hands-on expertise. My experience includes:",
     "items": "en"
   },
-
   "pricePolicy": {
     "title": "Price Policy",
     "firstConsultation": "First 15 MIN. - FREE consultation. We believe in transparency. That's why your first 15-minute consultation is completely free—no commitment, just answers.",
-    "standardRate": "€16 per hour (ex. BTW). Our services, including financial estimations, planning, and advisory support, are billed at €16 per hour (excluding VAT).",
-    "paymentTerms": "50/50 split: 50% based on a preliminary estimate before we start; 50% after completion—remaining balance is paid once all work is done.",
-    "timeTracking": "Transparent time tracking: every week, you will receive a detailed report with time spent on your project and remaining prepaid hours.",
-    "preliminaryEstimation": "Please contact us for a preliminary estimation based on a rate of €60 per hour or a fixed price, determined by project scope."
+    "standardRate": "Standard rate - €16 per hour (ex. BTW). Our services, including financial estimations, planning, and advisory support, are billed at€60 per hour (excluding VAT).",
+    "paymentTerms": "Payment terms - 50/50 split. 50% - Based on a preliminary estimate before we start. 50% after completion - The remaining balance is paid once all work is done.",
+    "timeTracking": "Transparent time tracking: every week, you will receive a detailed report with:",
+    "timeTrackingItems": "Time spent on your project",
+    "timeTrackingItemsTwo": "Remaining prepaid hours",
+    "preliminaryEstimation": "Please feel free to contact us for a preliminary estimation based on a rate of €60 per hour or a fixed price, which will be determined based on the project scope."
+  },
+  "offeredServices": {
+    "title": "Offered Services",
+    "textOne": "Company Registration & Setup:",
+    "textTwo": "Tax Returns & Optimization:",
+    "textThree": "Accounting & Bookkeeping:",
+    "textFour": "Financial Planning & Advisory:",
+    "textFive": "Business Credit & Loans:",
+    "textSix": "Legal & Contract Support:",
+    "paragraphOne": "Get your business (ZZP, BV, Holding) up and running smoothly with expert guidance.",
+    "paragraphTwo": "Personal and business taxes done right, with maximum deductions!",
+    "paragraphThree": "Flawless financial records, invoicing, and reporting.",
+    "paragraphFour": "Gain control of your finances with budgeting, forecasting, and strategic advice.",
+    "paragraphFive": "Secure funding with polished loan applications and credit strategies.",
+    "paragraphSix": "Navigate contracts and financial agreements with confidence."
   },
   "contactForm": {
     "title": "Contact Form",

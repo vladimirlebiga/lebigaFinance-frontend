@@ -19,3 +19,18 @@ export const StyledHeader = styled('h2')(() => ({
   fontSize: '1.4rem',
   fontWeight: 'bold',
 }));
+
+export const StyledItems = styled('li')(() => ({
+  padding: '0 0 0 20px',
+  position: 'relative',
+  listStyle: 'none',
+  marginLeft: '15px',
+
+  '&::before': {
+    content: '"•"',
+    position: 'absolute',
+    left: 0,
+    color: '#666',
+    fontSize: '1.2em',
+  },
+}));
