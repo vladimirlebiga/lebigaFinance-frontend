@@ -15,13 +15,6 @@ import {
   StyledRus,
 } from './Styled';
 
-// const languageLabels: Record<string, string> = {
-//   en: 'ENG',
-//   nl: 'NED',
-//   uk: 'УКР',
-//   ru: 'РУС',
-// };
-
 export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();

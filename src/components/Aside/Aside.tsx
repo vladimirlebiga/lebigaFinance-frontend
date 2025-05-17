@@ -20,10 +20,11 @@ import Link from 'next/link';
 import { Footer } from '../Footer/Footer';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const Aside: React.FC = () => {
   const { t } = useTranslation();
-
+  const { isMobile } = useResponsive();
   return (
     <StyledAside>
       <StyledNewImgOrange />
@@ -53,9 +54,11 @@ export const Aside: React.FC = () => {
           </StyledWrapper>
         </StyledIconWrapper>
         {/* Language selector with click-outside detection */}
-        <StyledLangButtonWrapper>
-          <LanguageSwitcher />
-        </StyledLangButtonWrapper>
+        {!isMobile && (
+          <StyledLangButtonWrapper>
+            <LanguageSwitcher />
+          </StyledLangButtonWrapper>
+        )}
         <Footer />
       </StyledSticky>
     </StyledAside>
