@@ -15,14 +15,16 @@ export const StyledWrapper = styled('div')(() => ({
   backgroundRepeat: 'no-repeat',
 }));
 
-export const StyledBox = styled('div')(() => ({
-  position: 'relative',
-  display: 'flex',
-  flexDirection: 'column',
-  gridColumn: '3 / 6',
-  gap: '16px',
-  width: '100%',
-}));
+export const StyledBox = styled('div')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+    gridColumn: isMobile ? '1 / 6' : '3 / 6',
+    gap: '16px',
+    width: '100%',
+  }),
+);
 
 export const StyledSection = styled('section')(() => ({
   height: '300px',
@@ -56,18 +58,20 @@ export const StyledNewImgTwo = styled('div')(() => ({
   zIndex: 0,
 }));
 
-export const StyledLink = styled(Link)(() => ({
-  position: 'fixed',
-  justifyContent: 'center',
-  alignItems: 'center',
-  display: 'flex',
-  width: '50px',
-  height: '50px',
-  borderRadius: '50%',
-  backgroundColor: '#333333',
-  bottom: '10%',
-  right: '10%',
-}));
+export const StyledLink = styled(Link)(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: isMobile ? 'relative' : 'fixed',
+    justifyContent: 'center',
+    alignItems: 'center',
+    display: 'flex',
+    width: isMobile ? '40px' : '50px',
+    height: isMobile ? '40px' : '50px',
+    borderRadius: '50%',
+    backgroundColor: '#333333',
+    bottom: isMobile ? '0' : '10%',
+    right: isMobile ? '0' : '10%',
+  }),
+);
 
 export const StyledIcon = styled(HomeRoundedIcon)(() => ({
   color: '#ffffff',

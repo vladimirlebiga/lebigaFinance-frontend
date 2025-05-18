@@ -14,7 +14,7 @@ import {
   StyledNed,
   StyledRus,
 } from './Styled';
-
+import { useResponsive } from '@/contexts/ResponsiveContext';
 export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
@@ -22,6 +22,7 @@ export function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
+  const { isMobile } = useResponsive();
 
   // Handle mounting
   useEffect(() => {
@@ -79,7 +80,7 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <StyledLangButtonWrapper ref={wrapperRef}>
+    <StyledLangButtonWrapper isMobile={isMobile} ref={wrapperRef}>
       <StyledLang onClick={() => setIsOpen(!isOpen)}>
         <StyledIcon />
       </StyledLang>

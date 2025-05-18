@@ -10,11 +10,15 @@ export const StyledLang = styled('button')(() => ({
   backgroundColor: 'transparent',
 }));
 
-export const StyledLangButtonWrapper = styled('div')(() => ({
-  position: 'relative',
-  backgroundColor: 'transparent',
-  bottom: 0,
-}));
+export const StyledLangButtonWrapper = styled('div')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: 'relative',
+    backgroundColor: 'transparent',
+    bottom: 0,
+    width: isMobile ? '40px' : '50px',
+    height: isMobile ? '40px' : '50px',
+  }),
+);
 
 export const StyledIcon = styled(LanguageSharpIcon)(() => ({
   color: '#333333',

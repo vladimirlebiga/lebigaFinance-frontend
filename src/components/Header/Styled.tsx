@@ -11,4 +11,12 @@ export const StyledHeader = styled('header')(() => ({
   zIndex: 1000,
 }));
 
-export const HeaderContent = styled('div')(() => ({}));
+export const HeaderContent = styled('div')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    display: isMobile ? 'flex' : 'block',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    // height: '100%',
+    padding: isMobile ? '10px' : '0',
+  }),
+);

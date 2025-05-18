@@ -19,14 +19,17 @@ import { WhyUs } from '../WhyUs/WhyUs';
 import { OfferedServices } from '../OfferedServices/OfferedServices';
 import { Qualifications } from '../Qualifications/Qualifications';
 import { PricePolicy } from '../PricePolicy/PricePolicy';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const HomePage = () => {
+  const { isMobile } = useResponsive();
+
   return (
     <div>
       <Container>
         <StyledWrapper>
-          <Aside />
-          <StyledBox>
+          {!isMobile && <Aside />}
+          <StyledBox isMobile={isMobile}>
             <StyledNewImgOne />
             <StyledNewImgTwo />
             <Header />
@@ -39,9 +42,11 @@ export const HomePage = () => {
             <PricePolicy />
             <MyForm />
           </StyledBox>
-          <StyledLink href="#home">
-            <StyledIcon />
-          </StyledLink>
+          {!isMobile && (
+            <StyledLink isMobile={isMobile} href="#home">
+              <StyledIcon />
+            </StyledLink>
+          )}
         </StyledWrapper>
       </Container>
     </div>

@@ -11,7 +11,7 @@ import {
   NavContainer,
 } from './Styled';
 import { useTranslation } from '@/hooks/useTranslation';
-
+import { useResponsive } from '@/contexts/ResponsiveContext';
 interface NavItem {
   title: string;
   icon: React.ElementType;
@@ -61,7 +61,7 @@ const navMenu: NavItem[] = [
 export const Nav = () => {
   const [textShown, setTextShown] = useState<string | null>(null);
   const { t } = useTranslation();
-
+  const { isMobile } = useResponsive();
   const handleMouseEnter = (title: string) => {
     setTextShown(title);
   };
@@ -74,7 +74,7 @@ export const Nav = () => {
   };
 
   return (
-    <NavContainer>
+    <NavContainer isMobile={isMobile}>
       <StyledUl>
         {navMenu.map((item, index) => (
           <StyledLi
@@ -87,7 +87,7 @@ export const Nav = () => {
               {textShown !== item.title && (
                 <div>
                   {item.isMuiIcon ? (
-                    <item.icon fontSize="large" />
+                    <item.icon sx={{ fontSize: 40 }} />
                   ) : (
                     <item.icon size={40} />
                   )}
