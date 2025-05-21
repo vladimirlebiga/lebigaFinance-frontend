@@ -14,9 +14,15 @@ export const StyledLangButtonWrapper = styled('div')(
   ({ isMobile }: { isMobile: boolean }) => ({
     position: 'relative',
     backgroundColor: 'transparent',
-    bottom: 0,
     width: isMobile ? '40px' : '50px',
     height: isMobile ? '40px' : '50px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: isMobile ? 'center' : 'center',
+    paddingLeft: isMobile ? '0' : 0,
+    marginTop: isMobile ? '2px' : 0,
+    bottom: isMobile ? '0' : 'auto',
+    right: isMobile ? '0' : 'auto',
   }),
 );
 
