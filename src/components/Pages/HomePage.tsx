@@ -27,14 +27,14 @@ export const HomePage = () => {
   return (
     <div>
       <Container>
-        <StyledWrapper>
+        <StyledWrapper isMobile={isMobile}>
           {!isMobile && <Aside />}
           <StyledBox isMobile={isMobile}>
-            <StyledNewImgOne />
-            <StyledNewImgTwo />
+            <StyledNewImgOne isMobile={isMobile} />
+            <StyledNewImgTwo isMobile={isMobile} />
             <Header />
             <Services />
-            <StyledSection />
+            <StyledSection isMobile={isMobile} />
             <AboutUs />
             <WhyUs />
             <OfferedServices />

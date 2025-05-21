@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledParagraph, StyledServices, StyledSection } from './Styled';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const servicesConfig: Record<string, string[]> = {
   en: [
@@ -40,8 +41,9 @@ export const Services = () => {
   const { t } = useTranslation();
   const services = t('services.services');
   const serviceConfig = servicesConfig[services];
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection id="home">
+    <StyledSection id="home" isMobile={isMobile}>
       <ul>
         {serviceConfig?.map((service) => (
           <StyledServices key={service}>{service}</StyledServices>

@@ -8,8 +8,6 @@ export const StyledHeader = styled('header')(
     backgroundPosition: 'center',
     height: '60px',
     position: 'sticky',
-    left: 0,
-    right: 0,
     top: 0,
     zIndex: 1000,
     width: isMobile ? '100vw' : '100%',

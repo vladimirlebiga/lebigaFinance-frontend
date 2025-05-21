@@ -15,7 +15,7 @@ export const Header = () => {
   const { isMobile } = useResponsive();
 
   return (
-    <StyledHeader>
+    <StyledHeader isMobile={isMobile}>
       <HeaderContent isMobile={isMobile}>
         {!isMobile && <Nav />}
         {isMobile && isOpen && <Nav />}
