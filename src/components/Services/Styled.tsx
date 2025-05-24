@@ -15,7 +15,7 @@ export const StyledParagraph = styled('p')(() => ({
 
 export const StyledSection = styled('section')(
   ({ isMobile }: { isMobile: boolean }) => ({
-    paddingTop: isMobile ? '10px' : '60px',
+    paddingTop: isMobile ? '60px' : '60px',
     paddingBottom: isMobile ? '10px' : '250px',
   }),
 );

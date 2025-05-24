@@ -4,9 +4,7 @@ import { styled } from '@mui/material/styles';
 import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
 
 export const StyledLang = styled('button')(() => ({
-  // position: 'relative',
   borderRadius: '50%',
-  // bottom: '100px',
   backgroundColor: 'transparent',
 }));
 
@@ -18,7 +16,7 @@ export const StyledLangButtonWrapper = styled('div')(
     height: isMobile ? '40px' : '50px',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: isMobile ? 'center' : 'center',
+    justifyContent: 'center',
     paddingLeft: isMobile ? '0' : 0,
     marginTop: isMobile ? '2px' : 0,
     bottom: isMobile ? '0' : 'auto',
@@ -31,50 +29,67 @@ export const StyledIcon = styled(LanguageSharpIcon)(() => ({
   fontSize: '3.5rem',
 }));
 
-export const StyledLangWrapper = styled('div')(() => ({
-  position: 'absolute',
-  bottom: '100%',
-  right: '-30%',
-}));
+export const StyledLangWrapper = styled('div')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: 'absolute',
+    bottom: isMobile ? '-230%' : '100%',
+    right: isMobile ? '0%' : '-30%',
+    backgroundColor: isMobile ? 'white' : 'transparent',
+    width: isMobile ? '40px' : 'auto',
+    padding: isMobile ? '5px' : '0',
+  }),
+);
 
-export const StyledNed = styled('button')(() => ({
-  position: 'absolute',
-  top: '-25px',
-  left: '-55px',
-  backgroundColor: 'transparent',
-  '&:hover': {
-    fontWeight: 'bold',
-  },
-}));
+export const StyledNed = styled('button')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: isMobile ? 'relative' : 'absolute',
+    top: isMobile ? '0' : '-25px',
+    left: isMobile ? '0' : '-55px',
+    padding: isMobile ? '2px' : '0',
+    backgroundColor: 'transparent',
+    '&:hover': {
+      fontWeight: 'bold',
+    },
+  }),
+);
 
-export const StyledUkr = styled('button')(() => ({
-  position: 'absolute',
-  top: '-5px',
-  left: '-15px',
-  backgroundColor: 'transparent',
-  '&:hover': {
-    fontWeight: 'bold',
-  },
-}));
+export const StyledUkr = styled('button')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: isMobile ? 'relative' : 'absolute',
+    top: isMobile ? '0' : '-5px',
+    left: isMobile ? '0' : '-15px',
+    padding: isMobile ? '2px' : '0',
+    backgroundColor: 'transparent',
+    '&:hover': {
+      fontWeight: 'bold',
+    },
+  }),
+);
 
-export const StyledEng = styled('button')(() => ({
-  position: 'absolute',
-  top: '20px',
-  left: '5px',
-  backgroundColor: 'transparent',
-  '&:hover': {
-    fontWeight: 'bold',
-  },
-}));
+export const StyledEng = styled('button')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: isMobile ? 'relative' : 'absolute',
+    top: isMobile ? '0' : '20px',
+    left: isMobile ? '0' : '5px',
+    padding: isMobile ? '2px' : '0',
+    backgroundColor: 'transparent',
+    '&:hover': {
+      fontWeight: 'bold',
+    },
+  }),
+);
 
-export const StyledRus = styled('button')(() => ({
-  position: 'absolute',
-  top: '45px',
-  left: '-15px',
-  backgroundColor: 'transparent',
-  '&:hover': {
-    fontWeight: 'bold',
-  },
-}));
+export const StyledRus = styled('button')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    position: isMobile ? 'relative' : 'absolute',
+    top: isMobile ? '0' : '45px',
+    left: isMobile ? '0' : '-15px',
+    padding: isMobile ? '2px' : '0',
+    backgroundColor: 'transparent',
+    '&:hover': {
+      fontWeight: 'bold',
+    },
+  }),
+);
 
 // import Brightness3OutlinedIcon from '@mui/icons-material/Brightness3Outlined';

@@ -20,6 +20,7 @@ import { OfferedServices } from '../OfferedServices/OfferedServices';
 import { Qualifications } from '../Qualifications/Qualifications';
 import { PricePolicy } from '../PricePolicy/PricePolicy';
 import { useResponsive } from '@/contexts/ResponsiveContext';
+import { Contact } from '../Contact/Contact';
 
 export const HomePage = () => {
   const { isMobile } = useResponsive();
@@ -40,6 +41,7 @@ export const HomePage = () => {
             <OfferedServices />
             <Qualifications />
             <PricePolicy />
+            {isMobile && <Contact />}
             <MyForm />
           </StyledBox>
           {!isMobile && (

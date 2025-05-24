@@ -15,7 +15,12 @@ import {
   StyledRus,
 } from './Styled';
 import { useResponsive } from '@/contexts/ResponsiveContext';
-export function LanguageSwitcher() {
+
+export function LanguageSwitcher({
+  onLinkClick,
+}: {
+  onLinkClick?: () => void;
+}) {
   const router = useRouter();
   const pathname = usePathname();
   const { setLocale } = useLanguage();
@@ -80,16 +85,40 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <StyledLangButtonWrapper isMobile={isMobile} ref={wrapperRef}>
+    <StyledLangButtonWrapper
+      isMobile={isMobile}
+      ref={wrapperRef}
+      onClick={onLinkClick}
+    >
       <StyledLang onClick={() => setIsOpen(!isOpen)}>
         <StyledIcon />
       </StyledLang>
       {isOpen && (
-        <StyledLangWrapper>
-          <StyledNed onClick={() => handleLanguageChange('nl')}>NED</StyledNed>
-          <StyledUkr onClick={() => handleLanguageChange('uk')}>УКР</StyledUkr>
-          <StyledEng onClick={() => handleLanguageChange('en')}>ENG</StyledEng>
-          <StyledRus onClick={() => handleLanguageChange('ru')}>РУС</StyledRus>
+        <StyledLangWrapper isMobile={isMobile}>
+          <StyledNed
+            isMobile={isMobile}
+            onClick={() => handleLanguageChange('nl')}
+          >
+            NED
+          </StyledNed>
+          <StyledUkr
+            isMobile={isMobile}
+            onClick={() => handleLanguageChange('uk')}
+          >
+            УКР
+          </StyledUkr>
+          <StyledEng
+            isMobile={isMobile}
+            onClick={() => handleLanguageChange('en')}
+          >
+            ENG
+          </StyledEng>
+          <StyledRus
+            isMobile={isMobile}
+            onClick={() => handleLanguageChange('ru')}
+          >
+            РУС
+          </StyledRus>
         </StyledLangWrapper>
       )}
     </StyledLangButtonWrapper>

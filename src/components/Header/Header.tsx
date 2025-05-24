@@ -7,8 +7,7 @@ import { StyledLangButtonWrapper } from '../LanguageSwitcher/Styled';
 import { useResponsive } from '@/contexts/ResponsiveContext';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-import { StyledLink } from '../Pages/Styled';
-import { StyledIcon } from '../Pages/Styled';
+import { StyledLink, StyledIcon } from '../Pages/Styled';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -18,10 +17,10 @@ export const Header = () => {
     <StyledHeader isMobile={isMobile}>
       <HeaderContent isMobile={isMobile}>
         {!isMobile && <Nav />}
-        {isMobile && isOpen && <Nav />}
+        {isMobile && isOpen && <Nav onLinkClick={() => setIsOpen(false)} />}
         {isMobile && (
           <StyledLangButtonWrapper isMobile={isMobile}>
-            <LanguageSwitcher />
+            <LanguageSwitcher onLinkClick={() => setIsOpen(false)} />
           </StyledLangButtonWrapper>
         )}
 
@@ -39,7 +38,13 @@ export const Header = () => {
           </>
         )}
         {isMobile && (
-          <StyledLink isMobile={isMobile} href="#home">
+          <StyledLink
+            isMobile={isMobile}
+            href="#home"
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
             <StyledIcon />
           </StyledLink>
         )}

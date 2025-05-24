@@ -14,9 +14,9 @@ import { useTranslation } from '@/hooks/useTranslation';
 import { useResponsive } from '@/contexts/ResponsiveContext';
 interface NavItem {
   title: string;
-  icon: React.ElementType;
+  icon?: React.ElementType;
   link: string;
-  isMuiIcon: boolean;
+  isMuiIcon?: boolean;
   scrolledClass?: string;
 }
 
@@ -56,9 +56,13 @@ const navMenu: NavItem[] = [
     isMuiIcon: false,
     scrolledClass: '2/5/3/6',
   },
+  {
+    title: 'Contact Us',
+    link: '#contact',
+  },
 ];
 
-export const Nav = () => {
+export const Nav = ({ onLinkClick }: { onLinkClick?: () => void }) => {
   const [textShown, setTextShown] = useState<string | null>(null);
   const { t } = useTranslation();
   const { isMobile } = useResponsive();
@@ -75,27 +79,34 @@ export const Nav = () => {
 
   return (
     <NavContainer isMobile={isMobile}>
-      <StyledUl>
+      <StyledUl isMobile={isMobile}>
         {navMenu.map((item, index) => (
           <StyledLi
             key={item.title}
             smallArea={item.scrolledClass}
+            isMobile={isMobile}
             onMouseEnter={() => handleMouseEnter(item.title)}
             onMouseLeave={() => handleMouseOut()}
+            onClick={onLinkClick}
           >
             <StyledIconWrapper href={item.link}>
-              {textShown !== item.title && (
+              {isMobile ? (
+                <StyledParagraph isMobile={isMobile}>
+                  {getMenuTranslation(index)}
+                </StyledParagraph>
+              ) : textShown !== item.title ? (
                 <div>
-                  {item.isMuiIcon ? (
-                    <item.icon sx={{ fontSize: 40 }} />
-                  ) : (
-                    <item.icon size={40} />
-                  )}
+                  {item.icon &&
+                    (item.isMuiIcon ? (
+                      <item.icon sx={{ fontSize: 40 }} />
+                    ) : (
+                      <item.icon size={40} />
+                    ))}
                 </div>
-              )}
-
-              {textShown === item.title && (
-                <StyledParagraph>{getMenuTranslation(index)}</StyledParagraph>
+              ) : (
+                <StyledParagraph isMobile={isMobile}>
+                  {getMenuTranslation(index)}
+                </StyledParagraph>
               )}
             </StyledIconWrapper>
           </StyledLi>
