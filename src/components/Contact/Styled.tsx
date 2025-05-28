@@ -46,9 +46,12 @@ export const StyledLang = styled('button')(() => ({
 }));
 
 export const StyledLangButtonWrapper = styled('div')(() => ({
-  position: 'relative',
+  position: 'absolute',
   backgroundColor: 'transparent',
-  bottom: '100px',
+  top: '20px',
+  right: '20px',
+  display: 'flex',
+  justifyContent: 'flex-end',
 }));
 
 export const HeaderTitle = () => (

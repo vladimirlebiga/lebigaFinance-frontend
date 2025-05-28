@@ -103,7 +103,8 @@ export const StyledLang = styled('button')(() => ({
 export const StyledLangButtonWrapper = styled('div')(() => ({
   position: 'relative',
   backgroundColor: 'transparent',
-  bottom: '100px',
+  marginTop: 'auto',
+  marginBottom: '100px',
 }));
 
 export const StyledIcon = styled(LanguageSharpIcon)(() => ({
