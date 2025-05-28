@@ -28,7 +28,7 @@ export const Aside: React.FC = () => {
             <LanguageSwitcher />
           </StyledLangButtonWrapper>
         )}
-        <Footer />
+        {!isMobile && <Footer />}
       </StyledSticky>
     </StyledAside>
   );

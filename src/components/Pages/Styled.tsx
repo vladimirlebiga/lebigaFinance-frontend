@@ -10,6 +10,7 @@ export const StyledWrapper = styled('div', {
   gridTemplateColumns: 'repeat(5, 1fr)', // two equal columns
   gap: '16px', // optional: spacing between Aside and MyForm
   padding: '0 !important',
+  paddingBottom: isMobile ? '50px !important' : '0',
   position: 'relative',
   backgroundImage: isMobile
     ? `none`

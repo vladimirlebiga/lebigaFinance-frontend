@@ -11,8 +11,10 @@ import PhoneSharpIcon from '@mui/icons-material/PhoneSharp';
 import ContactMailSharpIcon from '@mui/icons-material/ContactMailSharp';
 import Link from 'next/link';
 import { useTranslation } from '@/hooks/useTranslation';
+// import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const Contact = () => {
+  // const { isMobile } = useResponsive();
   const { t } = useTranslation();
   return (
     <section id="contact">

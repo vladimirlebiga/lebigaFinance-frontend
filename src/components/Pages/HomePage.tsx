@@ -21,6 +21,7 @@ import { Qualifications } from '../Qualifications/Qualifications';
 import { PricePolicy } from '../PricePolicy/PricePolicy';
 import { useResponsive } from '@/contexts/ResponsiveContext';
 import { Contact } from '../Contact/Contact';
+import { Footer } from '../Footer/Footer';
 
 export const HomePage = () => {
   const { isMobile } = useResponsive();
@@ -49,6 +50,7 @@ export const HomePage = () => {
               <StyledIcon />
             </StyledLink>
           )}
+          {isMobile && <Footer />}
         </StyledWrapper>
       </Container>
     </div>

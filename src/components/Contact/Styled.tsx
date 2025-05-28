@@ -12,8 +12,10 @@ export const StyledIconWrapper = styled('div')(() => ({
   flex: 1,
   display: 'flex',
   flexDirection: 'column',
+  alignItems: 'flex-start',
   justifyContent: 'center',
-  margin: '8px 0',
+  margin: '8px auto',
+  width: 'fit-content',
 }));
 
 export const StyledWrapper = styled('div')(() => ({
@@ -55,3 +57,12 @@ export const HeaderTitle = () => (
     <span style={{ fontWeight: 'normal', marginLeft: '8px' }}>FINANCE</span>
   </StyledH1>
 );
+
+// export const StyledSection = styled('section')(
+//   ({ isMobile }: { isMobile: boolean }) => ({
+//     display: isMobile ? 'flex' : 'block',
+//     justifyContent: 'center',
+//     flexDirection: 'column',
+//     alignItems: 'center',
+//   }),
+// );
