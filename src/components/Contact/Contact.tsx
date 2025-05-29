@@ -36,7 +36,7 @@ export const Contact = () => {
         </StyledWrapper>
         <StyledWrapper>
           <ContactMailSharpIcon style={{ marginRight: '8px' }} />
-          <Link href="#contact">{t('aside.contactUs')}</Link>
+          <Link href="#contactForm">{t('aside.contactUs')}</Link>
         </StyledWrapper>
       </StyledIconWrapper>
     </section>

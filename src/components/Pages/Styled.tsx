@@ -80,7 +80,7 @@ export const StyledLink = styled(Link, {
   height: isMobile ? '40px' : '50px',
   borderRadius: '50%',
   backgroundColor: '#333333',
-  bottom: isMobile ? '0' : '10%',
+  bottom: isMobile ? '0' : '100px',
   right: isMobile ? '0' : '10%',
 }));
 

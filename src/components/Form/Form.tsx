@@ -68,7 +68,7 @@ export function MyForm() {
   };
 
   return (
-    <StyledSection id="contact">
+    <StyledSection id="contactForm">
       <StyledFormWrapper>
         <StyledHeader>{t('contactForm.title')}</StyledHeader>
         <FormProvider {...formProps}>
