@@ -32,8 +32,8 @@ export const StyledIcon = styled(LanguageSharpIcon)(() => ({
 export const StyledLangWrapper = styled('div')(
   ({ isMobile }: { isMobile: boolean }) => ({
     position: 'absolute',
-    bottom: isMobile ? '-275%' : '100%',
-    right: isMobile ? '10%' : '-30%',
+    bottom: isMobile ? '-280%' : '100%',
+    right: isMobile ? '-10%' : '-30%',
     backgroundImage: isMobile
       ? `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1743878987/white-paper-texture_pgvkop.jpg)`
       : 'none',
@@ -41,7 +41,7 @@ export const StyledLangWrapper = styled('div')(
     backgroundSize: isMobile ? 'cover' : 'auto',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    width: isMobile ? '40px' : 'auto',
+    width: isMobile ? '50px' : 'auto',
     padding: isMobile ? '5px' : '0',
   }),
 );
