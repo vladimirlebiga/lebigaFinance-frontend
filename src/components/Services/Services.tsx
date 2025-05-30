@@ -49,8 +49,12 @@ export const Services = () => {
           <StyledServices key={service}>{service}</StyledServices>
         ))}
       </ul>
-      <StyledParagraph>{t('services.intro')}</StyledParagraph>
-      <StyledParagraph>{t('services.callToAction')}</StyledParagraph>
+      <StyledParagraph isMobile={isMobile}>
+        {t('services.intro')}
+      </StyledParagraph>
+      <StyledParagraph isMobile={isMobile}>
+        {t('services.callToAction')}
+      </StyledParagraph>
     </StyledSection>
   );
 };

@@ -9,13 +9,16 @@ export const StyledServices = styled('li')(() => ({
   padding: '10px 0',
 }));
 
-export const StyledParagraph = styled('p')(() => ({
-  padding: '20px 0',
-}));
+export const StyledParagraph = styled('p')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    padding: isMobile ? '0' : '20px 0',
+    paddingTop: isMobile ? '20px' : '0',
+  }),
+);
 
 export const StyledSection = styled('section')(
   ({ isMobile }: { isMobile: boolean }) => ({
     paddingTop: isMobile ? '60px' : '60px',
-    paddingBottom: isMobile ? '10px' : '250px',
+    paddingBottom: isMobile ? '0' : '250px',
   }),
 );

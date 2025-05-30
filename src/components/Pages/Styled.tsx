@@ -37,7 +37,7 @@ export const StyledSection = styled('section', {
   height: isMobile ? '10px' : '300px',
 }));
 
-// New styled component for the image
+// New styled component for the image Red Pants
 export const StyledNewImgOne = styled('div', {
   shouldForwardProp: (prop) => prop !== 'isMobile',
 })<{ isMobile: boolean }>(({ isMobile }) => ({
@@ -46,14 +46,16 @@ export const StyledNewImgOne = styled('div', {
   left: isMobile ? '0%' : '80%',
   width: isMobile ? '200px' : '400px',
   height: isMobile ? '200px' : '400px',
-  backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526796/slide_3_1_osei84.png)`,
+  backgroundImage: isMobile
+    ? `none`
+    : `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526796/slide_3_1_osei84.png)`,
   backgroundSize: isMobile ? '200px 200px' : '400px 400px',
   // backgroundPosition: 'bottom 63% left 10%',
   backgroundRepeat: 'no-repeat',
   zIndex: 0,
 }));
 
-// New styled component for the image
+// New styled component for the image Blue Skirt
 export const StyledNewImgTwo = styled('div', {
   shouldForwardProp: (prop) => prop !== 'isMobile',
 })<{ isMobile: boolean }>(({ isMobile }) => ({
@@ -62,7 +64,9 @@ export const StyledNewImgTwo = styled('div', {
   left: isMobile ? '0%' : '80%',
   width: isMobile ? '200px' : '400px',
   height: isMobile ? '200px' : '400px',
-  backgroundImage: `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526786/slide_4_srbsme.png)`,
+  backgroundImage: isMobile
+    ? `none`
+    : `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1744526786/slide_4_srbsme.png)`,
   backgroundSize: isMobile ? '200px 200px' : '400px 400px',
   // backgroundPosition: 'bottom 63% left 10%',
   backgroundRepeat: 'no-repeat',

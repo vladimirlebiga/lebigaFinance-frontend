@@ -61,11 +61,9 @@ export const HeaderTitle = () => (
   </StyledH1>
 );
 
-// export const StyledSection = styled('section')(
-//   ({ isMobile }: { isMobile: boolean }) => ({
-//     display: isMobile ? 'flex' : 'block',
-//     justifyContent: 'center',
-//     flexDirection: 'column',
-//     alignItems: 'center',
-//   }),
-// );
+export const StyledSection = styled('section')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    paddingTop: isMobile ? '35px' : '0',
+    paddingBottom: isMobile ? '0' : '0',
+  }),
+);

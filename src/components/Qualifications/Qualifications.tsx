@@ -7,6 +7,7 @@ import {
   StyledItems,
 } from './Styled';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 const itemsConfig: Record<string, string[]> = {
   en: [
@@ -47,8 +48,9 @@ export const Qualifications = () => {
   const { t } = useTranslation();
   const items = t('qualifications.items');
   const itemConfig = itemsConfig[items];
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection id="qualifications">
+    <StyledSection isMobile={isMobile} id="qualifications">
       <article>
         <StyledHeader>{t('qualifications.title')}</StyledHeader>
         <StyledParagraph>{t('qualifications.descriptionOne')}</StyledParagraph>

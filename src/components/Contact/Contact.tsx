@@ -4,6 +4,7 @@ import {
   StyledIconWrapper,
   StyledWrapper,
   StyledSpan,
+  StyledSection,
 } from './Styled';
 import { HeaderTitle } from '../Aside/Styled';
 import MailSharpIcon from '@mui/icons-material/MailSharp';
@@ -11,13 +12,13 @@ import PhoneSharpIcon from '@mui/icons-material/PhoneSharp';
 import ContactMailSharpIcon from '@mui/icons-material/ContactMailSharp';
 import Link from 'next/link';
 import { useTranslation } from '@/hooks/useTranslation';
-// import { useResponsive } from '@/contexts/ResponsiveContext';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const Contact = () => {
-  // const { isMobile } = useResponsive();
+  const { isMobile } = useResponsive();
   const { t } = useTranslation();
   return (
-    <section id="contact">
+    <StyledSection isMobile={isMobile} id="contact">
       <StyledAsideWrapper>
         <h2>{t('aside.title')}</h2>
         <StyledSpan>24/7</StyledSpan>
@@ -39,6 +40,6 @@ export const Contact = () => {
           <Link href="#contactForm">{t('aside.contactUs')}</Link>
         </StyledWrapper>
       </StyledIconWrapper>
-    </section>
+    </StyledSection>
   );
 };

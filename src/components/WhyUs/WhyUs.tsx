@@ -6,11 +6,13 @@ import {
   StyledSection,
 } from './Styled';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const WhyUs = () => {
   const { t } = useTranslation();
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection id="why-us">
+    <StyledSection isMobile={isMobile} id="why-us">
       <article>
         <StyledHeader>{t('whyUs.title')}</StyledHeader>
         <StyledText></StyledText>

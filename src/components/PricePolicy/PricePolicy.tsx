@@ -6,11 +6,13 @@ import {
   StyledItems,
 } from './Styled';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 export const PricePolicy = () => {
   const { t } = useTranslation();
+  const { isMobile } = useResponsive();
   return (
-    <StyledSection id="price-policy">
+    <StyledSection isMobile={isMobile} id="price-policy">
       <article>
         <StyledHeader>{t('pricePolicy.title')}</StyledHeader>
         <StyledParagraph>{t('pricePolicy.firstConsultation')}</StyledParagraph>
