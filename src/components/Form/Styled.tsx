@@ -15,9 +15,11 @@ export const StyledForm = styled('form')(() => ({
   margin: '0 auto',
 }));
 
-export const StyledSection = styled('section')(() => ({
-  paddingTop: '60px',
-}));
+export const StyledSection = styled('section')(
+  ({ isMobile }: { isMobile: boolean }) => ({
+    paddingTop: isMobile ? '70px' : '60px',
+  }),
+);
 
 export const StyledHeader = styled('h2')(() => ({
   fontSize: '1.4rem',

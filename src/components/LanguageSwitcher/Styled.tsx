@@ -32,9 +32,15 @@ export const StyledIcon = styled(LanguageSharpIcon)(() => ({
 export const StyledLangWrapper = styled('div')(
   ({ isMobile }: { isMobile: boolean }) => ({
     position: 'absolute',
-    bottom: isMobile ? '-230%' : '100%',
-    right: isMobile ? '0%' : '-30%',
-    backgroundColor: isMobile ? 'white' : 'transparent',
+    bottom: isMobile ? '-275%' : '100%',
+    right: isMobile ? '10%' : '-30%',
+    backgroundImage: isMobile
+      ? `url(https://res.cloudinary.com/dico8i3m0/image/upload/v1743878987/white-paper-texture_pgvkop.jpg)`
+      : 'none',
+    backgroundColor: 'transparent',
+    backgroundSize: isMobile ? 'cover' : 'auto',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
     width: isMobile ? '40px' : 'auto',
     padding: isMobile ? '5px' : '0',
   }),
@@ -47,6 +53,7 @@ export const StyledNed = styled('button')(
     left: isMobile ? '0' : '-55px',
     padding: isMobile ? '2px' : '0',
     backgroundColor: 'transparent',
+    fontSize: isMobile ? '1.2rem' : '1rem',
     '&:hover': {
       fontWeight: 'bold',
     },
@@ -60,6 +67,7 @@ export const StyledUkr = styled('button')(
     left: isMobile ? '0' : '-15px',
     padding: isMobile ? '2px' : '0',
     backgroundColor: 'transparent',
+    fontSize: isMobile ? '1.2rem' : '1rem',
     '&:hover': {
       fontWeight: 'bold',
     },
@@ -73,6 +81,7 @@ export const StyledEng = styled('button')(
     left: isMobile ? '0' : '5px',
     padding: isMobile ? '2px' : '0',
     backgroundColor: 'transparent',
+    fontSize: isMobile ? '1.2rem' : '1rem',
     '&:hover': {
       fontWeight: 'bold',
     },
@@ -86,6 +95,7 @@ export const StyledRus = styled('button')(
     left: isMobile ? '0' : '-15px',
     padding: isMobile ? '2px' : '0',
     backgroundColor: 'transparent',
+    fontSize: isMobile ? '1.2rem' : '1rem',
     '&:hover': {
       fontWeight: 'bold',
     },

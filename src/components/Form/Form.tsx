@@ -15,12 +15,14 @@ import {
   StyledHeader,
 } from './Styled';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useResponsive } from '@/contexts/ResponsiveContext';
 
 // Infer your form type directly from the schema:
 type FormValues = InferType<typeof schemaContact>;
 
 export function MyForm() {
   const { t } = useTranslation();
+  const { isMobile } = useResponsive();
   const formProps = useForm({
     defaultValues: {
       name: '',
@@ -68,7 +70,7 @@ export function MyForm() {
   };
 
   return (
-    <StyledSection id="contactForm">
+    <StyledSection isMobile={isMobile} id="contactForm">
       <StyledFormWrapper>
         <StyledHeader>{t('contactForm.title')}</StyledHeader>
         <FormProvider {...formProps}>
