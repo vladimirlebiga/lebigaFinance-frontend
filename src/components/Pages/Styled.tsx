@@ -27,7 +27,7 @@ export const StyledBox = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gridColumn: isMobile ? '1 / 6' : '3 / 6',
-  gap: '16px',
+  gap: isMobile ? '0' : '16px',
   width: '100%',
 }));
 

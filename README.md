@@ -1,8 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LEBIGAFINANCE
+
+## Quick Description
+LEBIGAFINANCE is a modern financial management web application built with Next.js and TypeScript. It provides a robust platform for managing financial data with a beautiful and intuitive user interface powered by Material-UI.
+
+## Features
+- Modern, responsive UI using Material-UI and Joy UI components
+- Form handling with React Hook Form and Yup validation
+- State management with Redux Toolkit
+- Email functionality with Nodemailer
+- Google APIs integration
+- Comprehensive testing setup with Jest
+- TypeScript for type safety
+- ESLint and Prettier for code quality
+
+## Tech Stack
+- **Frontend Framework**: Next.js 15.1.7
+- **Language**: TypeScript
+- **UI Libraries**: 
+  - Material-UI (MUI)
+  - Joy UI
+  - React Icons
+- **State Management**: Redux Toolkit
+- **Form Handling**: React Hook Form with Yup validation
+- **Testing**: Jest, React Testing Library
+- **Code Quality**: ESLint, Prettier, Husky
+- **Package Manager**: npm
+
+## Prerequisites
+- Node.js 22.14.0
+- npm 10.9.2
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +52,38 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm test` - Run tests with coverage
+- `npm run test:watch` - Run tests in watch mode
+- `npm run test:e2e` - Run end-to-end tests
 
-## Learn More
+## Project Structure
+```
+src/
+├── app/          # Next.js app directory
+├── components/   # React components
+├── lib/         # Utility functions and configurations
+├── messages/    # Internationalization messages
+└── public/      # Static assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
+This project is private and proprietary.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Support
+For support, please contact the development team.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

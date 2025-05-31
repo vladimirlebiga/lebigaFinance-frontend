@@ -6,7 +6,7 @@
     "node": "22.14.0",
     "npm": "10.9.2"
   },
-  "lint-staged": {
+  "lint:staged": {
     "src/**/*.{ts,js,json}": [
       "npm run lint",
       "npm run format"
@@ -17,7 +17,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-staged": "lint-staged --relative",
+    "lint:staged": "lint-staged --relative",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "test": "jest --coverage --passWithNoTests || true",
     "coverage": "jest --coverage",

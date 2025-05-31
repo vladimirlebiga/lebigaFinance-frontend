@@ -43,7 +43,7 @@ export const Services = () => {
   const serviceConfig = servicesConfig[services];
   const { isMobile } = useResponsive();
   return (
-    <StyledSection id="home" isMobile={isMobile}>
+    <StyledSection isMobile={isMobile}>
       <ul>
         {serviceConfig?.map((service) => (
           <StyledServices key={service}>{service}</StyledServices>

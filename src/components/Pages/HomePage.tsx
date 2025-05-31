@@ -24,16 +24,17 @@ import { Contact } from '../Contact/Contact';
 import { Footer } from '../Footer/Footer';
 
 export const HomePage = () => {
-  const { isMobile } = useResponsive();
+  const { isMobile, screenWidth } = useResponsive();
+  console.log(screenWidth);
 
   return (
     <div>
       <Container>
         <StyledWrapper isMobile={isMobile}>
           {!isMobile && <Aside />}
-          <StyledBox isMobile={isMobile}>
-            <StyledNewImgOne isMobile={isMobile} />
-            <StyledNewImgTwo isMobile={isMobile} />
+          <StyledBox id="home" isMobile={isMobile}>
+            {screenWidth > 1200 && <StyledNewImgOne isMobile={isMobile} />}
+            {screenWidth > 1200 && <StyledNewImgTwo isMobile={isMobile} />}
             <Header />
             <Services />
             <StyledSection isMobile={isMobile} />
