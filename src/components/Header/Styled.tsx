@@ -24,5 +24,7 @@ export const HeaderContent = styled('div')(
     padding: isMobile ? '10px 20px' : '0',
     maxWidth: isMobile ? '100%' : '1200px',
     margin: '0 auto',
+    position: 'relative',
+    height: '100%',
   }),
 );

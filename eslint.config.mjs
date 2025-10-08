@@ -1,65 +1,42 @@
-// @ts-check
-import eslint from "@eslint/js";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
-import globals from "globals";
-import tseslint from "typescript-eslint";
+// eslint.config.mjs
+import js from '@eslint/js';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
-  {
-    ignores: [
-      "node_modules/",
-      "dist/",
-      "prettier.config.js",
-      "eslint.config.mjs", // Ignore Prettier config
-      "test/app.e2e-spec.ts", // Ignore this test file if necessary
-    ],
-  },
-  eslint.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
-  eslintPluginPrettierRecommended,
+export default [
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
   {
     languageOptions: {
       globals: {
         ...globals.node,
-        ...globals.jest,
+        ...globals.browser,
       },
-      ecmaVersion: 5,
-      sourceType: "module",
       parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
+        project: './tsconfig.json',
       },
     },
-  },
-  {
+    files: ['**/*.{js,ts,jsx,tsx}'],
     rules: {
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-floating-promises": "warn",
-      "@typescript-eslint/no-unsafe-argument": "warn",
-    },
-  },
-  module.exports = {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      project: './tsconfig.json',
-      tsconfigRootDir: __dirname,
-      sourceType: 'module',
-    },
-    plugins: ['@typescript-eslint', 'prettier'],
-    extends: [
-      'next',
-      'next/core-web-vitals',
-      'plugin:@typescript-eslint/recommended',
-      'plugin:prettier/recommended',
-    ],
-    rules: {
+      // ✅ Base rules
+      semi: ['error', 'always'],
+      quotes: ['error', 'single'],
+      'no-unused-vars': 'warn',
+      'no-console': 'warn',
+      'eqeqeq': ['error', 'always'],
+
+      // ✅ TypeScript-specific rules
+      '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-      '@typescript-eslint/no-explicit-any': 'off',
+
+      // ✅ Code style
       'prettier/prettier': 'error',
-      'react/react-in-jsx-scope': 'off',
-      'no-console': ['error', { allow: ['warn', 'error'] }],
+      'object-curly-spacing': ['error', 'always'],
+      'arrow-parens': ['error', 'always'],
+      'comma-dangle': ['error', 'always-multiline'],
     },
-    ignorePatterns: ['*.config.js', 'node_modules/'],
-  };  
-);
+    plugins: {
+      prettier: require('eslint-plugin-prettier'),
+    },
+  },
+];

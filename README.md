@@ -65,6 +65,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Structure
 ```
+LEBIGAFINANCE
+│
+├── messages/           # json files with languages en, nl, uk, ru 
+├── src/
+    ├── app/            # Next.js app directory
+    ├── assests/
+    ├── components/     # React components
+        ├── 
+
+
+
 src/
 ├── app/          # Next.js app directory
 ├── components/   # React components
